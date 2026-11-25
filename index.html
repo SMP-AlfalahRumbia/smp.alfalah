@@ -214,59 +214,6 @@
    color: #fff;
   }
 
-  /* ---------- Topbar ---------- */
-  .topbar {
-   background: var(--blue-900);
-   color: #cfe0f6;
-   font-size: 13px;
-  }
-
-  .topbar .container {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   gap: 16px;
-   padding-block: 9px;
-   flex-wrap: wrap;
-  }
-
-  .topbar-info {
-   display: flex;
-   gap: 22px;
-   flex-wrap: wrap;
-  }
-
-  .topbar-info span {
-   display: inline-flex;
-   align-items: center;
-   gap: 7px;
-  }
-
-  .topbar svg {
-   width: 15px;
-   height: 15px;
-   color: #7fd6a5;
-   flex: none;
-  }
-
-  .topbar-social {
-   display: flex;
-   gap: 6px;
-  }
-
-  .topbar-social a {
-   width: 28px;
-   height: 28px;
-   display: grid;
-   place-items: center;
-   border-radius: 50%;
-   transition: background .2s;
-  }
-
-  .topbar-social a:hover {
-   background: rgba(255, 255, 255, .14);
-  }
-
   /* ---------- Navbar ---------- */
   .nav {
    position: sticky;
@@ -1733,10 +1680,6 @@
     margin: 10px 0 0;
     justify-content: center;
    }
-
-   .topbar-social {
-    display: none;
-   }
   }
 
   @media (max-width: 680px) {
@@ -1792,10 +1735,6 @@
     right: 8px;
    }
 
-   .topbar-info span:nth-child(2) {
-    display: none;
-   }
-
    .brand-text strong {
     font-size: 17px;
    }
@@ -1810,20 +1749,6 @@
    .btn {
     padding: 13px 22px;
     font-size: 14.5px;
-   }
-
-   .topbar {
-    font-size: 12px;
-   }
-
-   .topbar .container {
-    justify-content: center;
-    padding-block: 7px;
-   }
-
-   .topbar-info {
-    gap: 6px 16px;
-    justify-content: center;
    }
 
    .nav .container {
@@ -2286,35 +2211,6 @@
    </symbol>
   </defs>
  </svg>
-
- <!-- TOPBAR -->
- <div class="topbar">
-  <div class="container">
-   <div class="topbar-info">
-    <span><svg>
-      <use href="#i-pin" />
-     </svg>Rumbia, Lampung Tengah, Lampung</span>
-    <span><svg>
-      <use href="#i-clock" />
-     </svg>Senin – Sabtu, 07.00 – 15.00 WIB</span>
-    <span><svg>
-      <use href="#i-phone" />
-     </svg>+62 858-3215-5052</span>
-   </div>
-   <div class="topbar-social">
-    <!-- GANTI: tautan sosial media sekolah -->
-    <a href="#" aria-label="Facebook"><svg width="16" height="16">
-      <use href="#i-fb" />
-     </svg></a>
-    <a href="#" aria-label="Instagram"><svg width="16" height="16">
-      <use href="#i-ig" />
-     </svg></a>
-    <a href="#" aria-label="YouTube"><svg width="16" height="16">
-      <use href="#i-yt" />
-     </svg></a>
-   </div>
-  </div>
- </div>
 
  <!-- NAVBAR -->
  <header class="nav" id="nav">
