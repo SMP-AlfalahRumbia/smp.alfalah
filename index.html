@@ -2,2978 +2,2979 @@
 <html lang="id">
 
 <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>SMP Al Falah Rumbia — Cerdas, Berkarakter, Berprestasi</title>
- <meta name="description"
-  content="SMP Al Falah Rumbia memadukan kurikulum nasional dengan pembinaan karakter dan nilai-nilai keislaman. Informasi profil, program unggulan, fasilitas, dan pendaftaran peserta didik baru.">
- <meta name="theme-color" content="#0B3C7A">
- <!-- GANTI: logo sekolah (favicon). Contoh: <link rel="icon" href="assets/logo.png"> -->
- <link rel="icon" type="image/png" href="img/Logo.png">
- <link rel="apple-touch-icon" href="img/Logo.png">
- <meta property="og:image" content="img/Logo.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMP Al Falah Rumbia — Cerdas, Berkarakter, Berprestasi</title>
+  <meta name="description"
+    content="SMP Al Falah Rumbia memadukan kurikulum nasional dengan pembinaan karakter dan nilai-nilai keislaman. Informasi profil, program unggulan, fasilitas, dan pendaftaran peserta didik baru.">
+  <meta name="theme-color" content="#0B3C7A">
+  <!-- GANTI: logo sekolah (favicon). Contoh: <link rel="icon" href="assets/logo.png"> -->
+  <link rel="icon" type="image/png" href="img/Logo.png">
+  <link rel="apple-touch-icon" href="img/Logo.png">
+  <meta property="og:image" content="img/Logo.png">
 
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link
-  href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-  rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
- <style>
-  /* =========================================================
+  <style>
+    /* =========================================================
        TEMA — ubah warna sekolah cukup di sini
        ========================================================= */
-  :root {
-   --blue-900: #082A57;
-   --blue-800: #0B3C7A;
-   --blue-600: #1D5FBF;
-   --blue-100: #E3EEFB;
-   --green-700: #137A44;
-   --green-600: #1E9E5A;
-   --green-100: #E1F5EA;
-   --ink: #12233D;
-   --muted: #5A6B82;
-   --line: #E1E8F0;
-   --bg: #F5F8FC;
-   --white: #fff;
-   --grad: linear-gradient(135deg, var(--blue-800) 0%, var(--blue-600) 55%, var(--green-600) 130%);
-   --radius: 18px;
-   --shadow-sm: 0 2px 8px rgba(11, 60, 122, .06);
-   --shadow: 0 12px 32px rgba(11, 60, 122, .12);
-   --shadow-lg: 0 24px 60px rgba(8, 42, 87, .22);
-   --font: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-   --serif: 'Lora', Georgia, serif;
-  }
-
-  *,
-  *::before,
-  *::after {
-   box-sizing: border-box;
-  }
-
-  html {
-   scroll-behavior: smooth;
-   scroll-padding-top: 90px;
-  }
-
-  html {
-   -webkit-text-size-adjust: 100%;
-   text-size-adjust: 100%;
-  }
-
-  body {
-   overflow-x: clip;
-   margin: 0;
-   font-family: var(--font);
-   color: var(--ink);
-   background: var(--white);
-   line-height: 1.65;
-   -webkit-font-smoothing: antialiased;
-  }
-
-  img,
-  svg {
-   max-width: 100%;
-   display: block;
-  }
-
-  a {
-   color: inherit;
-   text-decoration: none;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4 {
-   font-family: var(--serif);
-   line-height: 1.2;
-   margin: 0;
-   color: var(--blue-900);
-  }
-
-  p {
-   margin: 0;
-  }
-
-  ul {
-   margin: 0;
-   padding: 0;
-   list-style: none;
-  }
-
-  :focus-visible {
-   outline: 3px solid var(--green-600);
-   outline-offset: 3px;
-   border-radius: 6px;
-  }
-
-  .container {
-   width: min(1180px, 92%);
-   margin-inline: auto;
-  }
-
-  .skip {
-   position: absolute;
-   left: -999px;
-   top: 8px;
-   background: var(--white);
-   padding: 10px 16px;
-   border-radius: 8px;
-   z-index: 100;
-  }
-
-  .skip:focus {
-   left: 8px;
-  }
-
-  /* ---------- Placeholder foto: set  style="--img:url('assets/foto.jpg')"  untuk mengganti ---------- */
-  .photo {
-   position: relative;
-   overflow: hidden;
-   border-radius: var(--radius);
-   background-color: var(--blue-100);
-   background-image: var(--img, linear-gradient(135deg, #cfe2f8, #c8ecd8));
-   background-size: cover;
-   background-position: center;
-   display: grid;
-   place-items: center;
-   color: rgba(11, 60, 122, .35);
-  }
-
-  .photo svg {
-   width: 38%;
-   max-width: 72px;
-   opacity: var(--ph, 1);
-  }
-
-  .photo[style*="--img"] svg {
-   display: none;
-  }
-
-  /* ---------- Tombol ---------- */
-  .btn {
-   display: inline-flex;
-   align-items: center;
-   gap: 10px;
-   padding: 14px 26px;
-   border-radius: 999px;
-   font-weight: 700;
-   font-size: 15px;
-   border: 2px solid transparent;
-   cursor: pointer;
-   transition: transform .2s, box-shadow .2s, background .2s, color .2s;
-   font-family: var(--font);
-  }
-
-  .btn:hover {
-   transform: translateY(-2px);
-  }
-
-  .btn svg {
-   width: 18px;
-   height: 18px;
-  }
-
-  .btn-green {
-   background: var(--green-600);
-   color: #fff;
-   box-shadow: 0 8px 20px rgba(30, 158, 90, .35);
-  }
-
-  .btn-green:hover {
-   background: var(--green-700);
-  }
-
-  .btn-blue {
-   background: var(--blue-800);
-   color: #fff;
-   box-shadow: 0 8px 20px rgba(11, 60, 122, .3);
-  }
-
-  .btn-blue:hover {
-   background: var(--blue-900);
-  }
-
-  .btn-ghost {
-   border-color: rgba(255, 255, 255, .55);
-   color: #fff;
-  }
-
-  .btn-ghost:hover {
-   background: rgba(255, 255, 255, .14);
-  }
-
-  .btn-outline {
-   border-color: var(--blue-800);
-   color: var(--blue-800);
-  }
-
-  .btn-outline:hover {
-   background: var(--blue-800);
-   color: #fff;
-  }
-
-  /* ---------- Navbar ---------- */
-  .nav {
-   position: sticky;
-   top: 0;
-   z-index: 50;
-   background: rgba(255, 255, 255, .92);
-   backdrop-filter: blur(14px);
-   border-bottom: 1px solid transparent;
-   transition: box-shadow .25s, border-color .25s;
-  }
-
-  .nav.scrolled {
-   box-shadow: var(--shadow-sm);
-   border-color: var(--line);
-  }
-
-  .nav .container {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   height: 76px;
-   gap: 20px;
-  }
-
-  .brand {
-   display: flex;
-   align-items: center;
-   gap: 12px;
-  }
-
-  .brand-mark {
-   width: 46px;
-   height: 46px;
-   flex: none;
-  }
-
-  .brand-mark img {
-   width: 100%;
-   height: 100%;
-   object-fit: contain;
-  }
-
-  .brand-mark-foot {
-   background: #fff;
-   border-radius: 12px;
-   padding: 4px;
-   width: 50px;
-   height: 50px;
-  }
-
-  .brand-text strong {
-   display: block;
-   font-family: var(--serif);
-   font-size: 19px;
-   color: var(--blue-900);
-   line-height: 1.1;
-  }
-
-  .brand-text span {
-   font-size: 11.5px;
-   color: var(--muted);
-   letter-spacing: .08em;
-   text-transform: uppercase;
-   font-weight: 600;
-  }
-
-  .menu {
-   display: flex;
-   align-items: center;
-   gap: 4px;
-  }
-
-  .menu a {
-   padding: 9px 14px;
-   border-radius: 999px;
-   font-size: 14.5px;
-   font-weight: 600;
-   color: var(--ink);
-   transition: background .2s, color .2s;
-  }
-
-  .menu a:hover,
-  .menu a.active {
-   background: var(--blue-100);
-   color: var(--blue-800);
-  }
-
-  .menu .btn {
-   margin-left: 8px;
-   padding: 10px 20px;
-   color: #fff;
-   font-size: 14px;
-  }
-
-  .menu .btn:hover {
-   background: var(--green-700);
-   color: #fff;
-  }
-
-  .burger {
-   display: none;
-   width: 46px;
-   height: 46px;
-   border: 0;
-   background: var(--blue-100);
-   border-radius: 12px;
-   cursor: pointer;
-   padding: 0;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   gap: 5px;
-  }
-
-  .burger span {
-   width: 22px;
-   height: 2.5px;
-   background: var(--blue-800);
-   border-radius: 2px;
-   transition: transform .25s, opacity .25s;
-  }
-
-  .burger[aria-expanded="true"] span:nth-child(1) {
-   transform: translateY(7.5px) rotate(45deg);
-  }
-
-  .burger[aria-expanded="true"] span:nth-child(2) {
-   opacity: 0;
-  }
-
-  .burger[aria-expanded="true"] span:nth-child(3) {
-   transform: translateY(-7.5px) rotate(-45deg);
-  }
-
-  /* ---------- Hero ---------- */
-  .hero {
-   position: relative;
-   background: var(--grad);
-   color: #fff;
-   overflow: hidden;
-   isolation: isolate;
-  }
-
-  .hero::before {
-   content: "";
-   position: absolute;
-   inset: 0;
-   z-index: -1;
-   opacity: .5;
-   background:
-    radial-gradient(circle at 85% 15%, rgba(255, 255, 255, .22), transparent 38%),
-    radial-gradient(circle at 5% 95%, rgba(30, 158, 90, .55), transparent 40%);
-  }
-
-  .hero::after {
-   content: "";
-   position: absolute;
-   inset: 0;
-   z-index: -1;
-   opacity: .07;
-   background-image: radial-gradient(#fff 1.2px, transparent 1.2px);
-   background-size: 26px 26px;
-  }
-
-  .hero .container {
-   display: grid;
-   grid-template-columns: 1.1fr .9fr;
-   gap: 56px;
-   align-items: center;
-   padding-block: 88px 120px;
-  }
-
-  .eyebrow {
-   display: inline-flex;
-   align-items: center;
-   gap: 9px;
-   padding: 7px 16px;
-   border-radius: 999px;
-   background: rgba(255, 255, 255, .14);
-   border: 1px solid rgba(255, 255, 255, .28);
-   font-size: 13px;
-   font-weight: 600;
-  }
-
-  .eyebrow i {
-   width: 8px;
-   height: 8px;
-   border-radius: 50%;
-   background: #7ff0ae;
-   box-shadow: 0 0 0 4px rgba(127, 240, 174, .25);
-  }
-
-  .hero h1 {
-   color: #fff;
-   font-size: clamp(34px, 5.2vw, 58px);
-   margin: 22px 0 18px;
-   font-weight: 700;
-   letter-spacing: -.01em;
-  }
-
-  .hero h1 em {
-   font-style: italic;
-   color: #9af2c1;
-  }
-
-  .hero p.lead {
-   font-size: 18px;
-   color: #dbe8fa;
-   max-width: 540px;
-  }
-
-  .hero-cta {
-   display: flex;
-   gap: 14px;
-   margin-top: 34px;
-   flex-wrap: wrap;
-  }
-
-  .hero-visual {
-   position: relative;
-  }
-
-  .hero-visual .photo {
-   aspect-ratio: 4/4.4;
-   border-radius: 28px;
-   box-shadow: var(--shadow-lg);
-   border: 6px solid rgba(255, 255, 255, .22);
-   --ph: .6;
-  }
-
-  .float-card {
-   position: absolute;
-   background: #fff;
-   color: var(--ink);
-   border-radius: 16px;
-   padding: 14px 18px;
-   box-shadow: var(--shadow);
-   display: flex;
-   align-items: center;
-   gap: 12px;
-   animation: bob 5s ease-in-out infinite;
-  }
-
-  .float-card b {
-   display: block;
-   font-size: 20px;
-   font-family: var(--serif);
-   color: var(--blue-800);
-   line-height: 1.1;
-  }
-
-  .float-card small {
-   color: var(--muted);
-   font-size: 12px;
-   font-weight: 600;
-  }
-
-  .float-card .ic {
-   width: 42px;
-   height: 42px;
-   border-radius: 12px;
-   display: grid;
-   place-items: center;
-   background: var(--green-100);
-   color: var(--green-700);
-  }
-
-  .float-card .ic svg {
-   width: 22px;
-   height: 22px;
-  }
-
-  .fc-1 {
-   left: -34px;
-   bottom: 56px;
-  }
-
-  .fc-2 {
-   right: -14px;
-   top: 38px;
-   animation-delay: -2.4s;
-  }
-
-  .fc-2 .ic {
-   background: var(--blue-100);
-   color: var(--blue-600);
-  }
-
-  @keyframes bob {
-   50% {
-    transform: translateY(-10px);
-   }
-  }
-
-  .hero-wave {
-   position: absolute;
-   left: 0;
-   right: 0;
-   bottom: -1px;
-   line-height: 0;
-  }
-
-  .hero-wave svg {
-   width: 100%;
-   height: 70px;
-  }
-
-  /* ---------- Stats ---------- */
-  .stats {
-   margin-top: -62px;
-   position: relative;
-   z-index: 2;
-  }
-
-  .stats-grid {
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   background: #fff;
-   border-radius: 24px;
-   box-shadow: var(--shadow);
-   overflow: hidden;
-  }
-
-  .stat {
-   padding: 30px 24px;
-   text-align: center;
-   border-right: 1px solid var(--line);
-  }
-
-  .stat:last-child {
-   border: 0;
-  }
-
-  .stat b {
-   display: block;
-   font-family: var(--serif);
-   font-size: 40px;
-   color: var(--blue-800);
-   line-height: 1;
-  }
-
-  .stat b sup {
-   color: var(--green-600);
-   font-size: 24px;
-  }
-
-  .stat span {
-   display: block;
-   margin-top: 8px;
-   color: var(--muted);
-   font-size: 14px;
-   font-weight: 600;
-  }
-
-  /* ---------- Section umum ---------- */
-  section {
-   padding-block: 92px;
-  }
-
-  .sec-head {
-   text-align: center;
-   max-width: 680px;
-   margin: 0 auto 56px;
-  }
-
-  .sec-head.left {
-   text-align: left;
-   margin-left: 0;
-  }
-
-  .tag {
-   display: inline-block;
-   font-size: 12.5px;
-   font-weight: 800;
-   letter-spacing: .14em;
-   text-transform: uppercase;
-   color: var(--green-700);
-   background: var(--green-100);
-   padding: 6px 14px;
-   border-radius: 999px;
-   margin-bottom: 16px;
-  }
-
-  .sec-head h2 {
-   font-size: clamp(28px, 3.6vw, 40px);
-  }
-
-  .sec-head p {
-   color: var(--muted);
-   margin-top: 14px;
-   font-size: 17px;
-  }
-
-  .bg-soft {
-   background: var(--bg);
-  }
-
-  /* ---------- Sambutan ---------- */
-  .about {
-   display: grid;
-   grid-template-columns: .85fr 1.15fr;
-   gap: 64px;
-   align-items: center;
-  }
-
-  .about .photo {
-   aspect-ratio: 4/5;
-   border-radius: 26px;
-   --ph: .6;
-  }
-
-  .about-photo {
-   position: relative;
-  }
-
-  .about-photo::before {
-   content: "";
-   position: absolute;
-   inset: 22px -22px -22px 22px;
-   border-radius: 26px;
-   background: var(--grad);
-   opacity: .16;
-   z-index: -1;
-  }
-
-  .about-photo .caption {
-   position: absolute;
-   left: 20px;
-   right: 20px;
-   bottom: 20px;
-   background: rgba(255, 255, 255, .95);
-   backdrop-filter: blur(6px);
-   border-radius: 14px;
-   padding: 14px 18px;
-   box-shadow: var(--shadow-sm);
-  }
-
-  .about-photo .caption b {
-   display: block;
-   color: var(--blue-900);
-   font-family: var(--serif);
-  }
-
-  .about-photo .caption small {
-   color: var(--muted);
-   font-weight: 600;
-  }
-
-  .about h2 {
-   font-size: clamp(28px, 3.4vw, 38px);
-   margin-bottom: 20px;
-  }
-
-  .about p {
-   color: var(--muted);
-   margin-bottom: 16px;
-   font-size: 16.5px;
-  }
-
-  .about blockquote {
-   margin: 26px 0;
-   padding: 18px 22px;
-   border-left: 4px solid var(--green-600);
-   background: var(--green-100);
-   border-radius: 0 14px 14px 0;
-   font-family: var(--serif);
-   font-size: 18px;
-   color: var(--blue-900);
-   font-style: italic;
-  }
-
-  .checks {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 12px 24px;
-   margin-top: 8px;
-  }
-
-  .checks li {
-   display: flex;
-   gap: 10px;
-   align-items: flex-start;
-   font-weight: 600;
-   font-size: 15px;
-  }
-
-  .checks svg {
-   width: 22px;
-   height: 22px;
-   color: var(--green-600);
-   flex: none;
-   margin-top: 2px;
-  }
-
-  /* ---------- Visi Misi ---------- */
-  .vm-grid {
-   display: grid;
-   grid-template-columns: 1fr 1.25fr;
-   gap: 28px;
-  }
-
-  .vm-card {
-   border-radius: 24px;
-   padding: 40px;
-   position: relative;
-   overflow: hidden;
-  }
-
-  .vm-card.visi {
-   background: var(--grad);
-   color: #fff;
-  }
-
-  .vm-card.visi h3 {
-   color: #fff;
-  }
-
-  .vm-card.visi::after {
-   content: "";
-   position: absolute;
-   width: 240px;
-   height: 240px;
-   border-radius: 50%;
-   right: -80px;
-   bottom: -90px;
-   background: rgba(255, 255, 255, .1);
-  }
-
-  .vm-card.misi {
-   background: #fff;
-   border: 1px solid var(--line);
-   box-shadow: var(--shadow-sm);
-  }
-
-  .vm-card h3 {
-   font-size: 26px;
-   margin-bottom: 18px;
-   display: flex;
-   align-items: center;
-   gap: 12px;
-  }
-
-  .vm-card h3 .ic {
-   width: 44px;
-   height: 44px;
-   border-radius: 12px;
-   display: grid;
-   place-items: center;
-   background: rgba(255, 255, 255, .18);
-  }
-
-  .misi h3 .ic {
-   background: var(--green-100);
-   color: var(--green-700);
-  }
-
-  .vm-card h3 svg {
-   width: 24px;
-   height: 24px;
-  }
-
-  .vm-card.visi p {
-   font-size: 18px;
-   color: #e6f0fd;
-   font-family: var(--serif);
-  }
-
-  .misi ol {
-   margin: 0;
-   padding: 0;
-   list-style: none;
-   counter-reset: m;
-   display: grid;
-   gap: 14px;
-  }
-
-  .misi li {
-   counter-increment: m;
-   display: flex;
-   gap: 14px;
-   color: var(--muted);
-  }
-
-  .misi li::before {
-   content: counter(m);
-   flex: none;
-   width: 28px;
-   height: 28px;
-   border-radius: 50%;
-   background: var(--blue-100);
-   color: var(--blue-800);
-   font-weight: 800;
-   font-size: 13px;
-   display: grid;
-   place-items: center;
-   margin-top: 1px;
-  }
-
-  /* ---------- Program unggulan ---------- */
-  .cards-3 {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 26px;
-  }
-
-  .feature {
-   background: #fff;
-   border: 1px solid var(--line);
-   border-radius: var(--radius);
-   padding: 32px;
-   transition: transform .25s, box-shadow .25s, border-color .25s;
-   position: relative;
-   overflow: hidden;
-  }
-
-  .feature::before {
-   content: "";
-   position: absolute;
-   left: 0;
-   top: 0;
-   height: 4px;
-   width: 100%;
-   background: var(--grad);
-   transform: scaleX(0);
-   transform-origin: left;
-   transition: transform .35s;
-  }
-
-  .feature:hover {
-   transform: translateY(-6px);
-   box-shadow: var(--shadow);
-   border-color: transparent;
-  }
-
-  .feature:hover::before {
-   transform: scaleX(1);
-  }
-
-  .feature .ic {
-   width: 58px;
-   height: 58px;
-   border-radius: 16px;
-   display: grid;
-   place-items: center;
-   margin-bottom: 22px;
-   background: var(--blue-100);
-   color: var(--blue-600);
-  }
-
-  .feature:nth-child(even) .ic {
-   background: var(--green-100);
-   color: var(--green-700);
-  }
-
-  .feature .ic svg {
-   width: 28px;
-   height: 28px;
-  }
-
-  .feature h3 {
-   font-size: 21px;
-   margin-bottom: 10px;
-  }
-
-  .feature p {
-   color: var(--muted);
-   font-size: 15.5px;
-  }
-
-  /* ---------- Kurikulum / Jenjang ---------- */
-  .grades {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 26px;
-  }
-
-  .grade {
-   border-radius: 22px;
-   padding: 34px;
-   background: #fff;
-   border: 1px solid var(--line);
-   box-shadow: var(--shadow-sm);
-  }
-
-  .grade .n {
-   font-family: var(--serif);
-   font-size: 64px;
-   line-height: 1;
-   font-weight: 700;
-   background: var(--grad);
-   -webkit-background-clip: text;
-   background-clip: text;
-   color: transparent;
-  }
-
-  .grade h3 {
-   margin: 10px 0 14px;
-   font-size: 22px;
-  }
-
-  .grade li {
-   display: flex;
-   gap: 10px;
-   color: var(--muted);
-   padding: 6px 0;
-   font-size: 15px;
-  }
-
-  .grade li::before {
-   content: "";
-   width: 8px;
-   height: 8px;
-   border-radius: 50%;
-   background: var(--green-600);
-   margin-top: 9px;
-   flex: none;
-  }
-
-  /* ---------- Ekstrakurikuler ---------- */
-  .chips {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 12px;
-   justify-content: center;
-  }
-
-  .chip {
-   display: inline-flex;
-   align-items: center;
-   gap: 10px;
-   padding: 13px 22px;
-   background: #fff;
-   border: 1px solid var(--line);
-   border-radius: 999px;
-   font-weight: 700;
-   font-size: 15px;
-   color: var(--blue-900);
-   transition: all .2s;
-   box-shadow: var(--shadow-sm);
-  }
-
-  .chip svg {
-   width: 20px;
-   height: 20px;
-   color: var(--green-600);
-  }
-
-  .chip:hover {
-   background: var(--blue-800);
-   color: #fff;
-   transform: translateY(-3px);
-   border-color: var(--blue-800);
-  }
-
-  .chip:hover svg {
-   color: #9af2c1;
-  }
-
-  /* ---------- Berita ---------- */
-  .news-grid {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 26px;
-  }
-
-  .news {
-   background: #fff;
-   border-radius: var(--radius);
-   overflow: hidden;
-   border: 1px solid var(--line);
-   transition: transform .25s, box-shadow .25s;
-   display: flex;
-   flex-direction: column;
-  }
-
-  .news:hover {
-   transform: translateY(-6px);
-   box-shadow: var(--shadow);
-  }
-
-  .news .photo {
-   aspect-ratio: 16/10;
-   border-radius: 0;
-   --ph: .5;
-  }
-
-  .news-body {
-   padding: 24px;
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
-   flex: 1;
-  }
-
-  .news-meta {
-   display: flex;
-   gap: 12px;
-   align-items: center;
-   font-size: 13px;
-   color: var(--muted);
-   font-weight: 600;
-  }
-
-  .news-meta .cat {
-   color: var(--green-700);
-   background: var(--green-100);
-   padding: 3px 10px;
-   border-radius: 999px;
-   font-weight: 700;
-  }
-
-  .news h3 {
-   font-size: 19px;
-  }
-
-  .news p {
-   color: var(--muted);
-   font-size: 15px;
-  }
-
-  .news .more {
-   margin-top: auto;
-   padding-top: 6px;
-   color: var(--blue-600);
-   font-weight: 700;
-   font-size: 14.5px;
-   display: inline-flex;
-   gap: 6px;
-   align-items: center;
-  }
-
-  .news .more svg {
-   width: 16px;
-   height: 16px;
-   transition: transform .2s;
-  }
-
-  .news:hover .more svg {
-   transform: translateX(4px);
-  }
-
-  .news h3,
-  .news p {
-   overflow-wrap: anywhere;
-  }
-
-  .news h3.clamp {
-   display: -webkit-box;
-   -webkit-line-clamp: 2;
-   -webkit-box-orient: vertical;
-   overflow: hidden;
-  }
-
-  .news p.clamp {
-   display: -webkit-box;
-   -webkit-line-clamp: 3;
-   -webkit-box-orient: vertical;
-   overflow: hidden;
-  }
-
-  .news.ig .cat {
-   background: linear-gradient(135deg, var(--blue-100), var(--green-100));
-   color: var(--blue-800);
-  }
-
-  .ig-follow {
-   display: flex;
-   justify-content: center;
-   margin-top: 40px;
-  }
-
-  .ig-follow .btn svg {
-   width: 20px;
-   height: 20px;
-  }
-
-  /* ---------- Fasilitas ---------- */
-  .fas-grid {
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   gap: 20px;
-  }
-
-  .fas {
-   position: relative;
-   aspect-ratio: 1/1.1;
-   border-radius: var(--radius);
-   overflow: hidden;
-   --ph: .55;
-  }
-
-  .fas::after {
-   content: "";
-   position: absolute;
-   inset: 0;
-   background: linear-gradient(180deg, transparent 45%, rgba(8, 42, 87, .88));
-  }
-
-  .fas span {
-   position: absolute;
-   left: 20px;
-   right: 20px;
-   bottom: 18px;
-   z-index: 2;
-   color: #fff;
-   font-family: var(--serif);
-   font-weight: 600;
-   font-size: 19px;
-  }
-
-  .fas span small {
-   display: block;
-   font-family: var(--font);
-   font-size: 13px;
-   font-weight: 500;
-   color: #c6dbf5;
-   margin-top: 2px;
-  }
-
-  .fas .photo,
-  .fas {
-   transition: transform .3s;
-  }
-
-  .fas:hover {
-   transform: scale(1.025);
-  }
-
-  /* ---------- Galeri ---------- */
-  .gallery {
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   grid-auto-rows: 190px;
-   gap: 16px;
-  }
-
-  .gallery .photo {
-   border-radius: 16px;
-   --ph: .5;
-   transition: transform .3s;
-  }
-
-  .gallery .photo:hover {
-   transform: scale(1.03);
-  }
-
-  .gallery .w2 {
-   grid-column: span 2;
-  }
-
-  .gallery .h2 {
-   grid-row: span 2;
-  }
-
-  /* ---------- PPDB ---------- */
-  .ppdb {
-   background: var(--grad);
-   color: #fff;
-   position: relative;
-   overflow: hidden;
-   isolation: isolate;
-  }
-
-  .ppdb::before {
-   content: "";
-   position: absolute;
-   inset: 0;
-   z-index: -1;
-   opacity: .08;
-   background-image: radial-gradient(#fff 1.2px, transparent 1.2px);
-   background-size: 26px 26px;
-  }
-
-  .ppdb .sec-head h2 {
-   color: #fff;
-  }
-
-  .ppdb .sec-head p {
-   color: #d6e5f9;
-  }
-
-  .ppdb .tag {
-   background: rgba(255, 255, 255, .16);
-   color: #b8f5d2;
-  }
-
-  .steps {
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   gap: 22px;
-   counter-reset: s;
-   position: relative;
-  }
-
-  .step {
-   background: rgba(255, 255, 255, .1);
-   border: 1px solid rgba(255, 255, 255, .22);
-   border-radius: var(--radius);
-   padding: 28px 24px;
-   backdrop-filter: blur(6px);
-   counter-increment: s;
-  }
-
-  .step::before {
-   content: counter(s);
-   display: grid;
-   place-items: center;
-   width: 44px;
-   height: 44px;
-   border-radius: 50%;
-   background: #fff;
-   color: var(--blue-800);
-   font-family: var(--serif);
-   font-weight: 700;
-   font-size: 20px;
-   margin-bottom: 16px;
-  }
-
-  .step h3 {
-   color: #fff;
-   font-size: 18px;
-   margin-bottom: 8px;
-  }
-
-  .step p {
-   color: #d6e5f9;
-   font-size: 14.5px;
-  }
-
-  .ppdb-box {
-   margin-top: 44px;
-   display: grid;
-   grid-template-columns: 1.2fr .8fr;
-   gap: 26px;
-  }
-
-  .req,
-  .cta-card {
-   border-radius: 22px;
-   padding: 34px;
-  }
-
-  .req {
-   background: #fff;
-   color: var(--ink);
-  }
-
-  .req h3 {
-   margin-bottom: 16px;
-   font-size: 22px;
-  }
-
-  .req li {
-   display: flex;
-   gap: 10px;
-   padding: 7px 0;
-   color: var(--muted);
-   font-size: 15.5px;
-  }
-
-  .req li svg {
-   width: 20px;
-   height: 20px;
-   color: var(--green-600);
-   flex: none;
-   margin-top: 3px;
-  }
-
-  .cta-card {
-   background: rgba(255, 255, 255, .12);
-   border: 1px solid rgba(255, 255, 255, .3);
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   gap: 14px;
-  }
-
-  .cta-card h3 {
-   color: #fff;
-   font-size: 24px;
-  }
-
-  .cta-card p {
-   color: #d6e5f9;
-  }
-
-  .cta-card .btn {
-   justify-content: center;
-  }
-
-  .cta-card .btn-white {
-   background: #fff;
-   color: var(--blue-800);
-  }
-
-  /* ---------- FAQ ---------- */
-  .faq {
-   max-width: 820px;
-   margin-inline: auto;
-   display: grid;
-   gap: 14px;
-  }
-
-  .faq details {
-   background: #fff;
-   border: 1px solid var(--line);
-   border-radius: 16px;
-   overflow: hidden;
-   transition: box-shadow .2s;
-  }
-
-  .faq details[open] {
-   box-shadow: var(--shadow-sm);
-   border-color: #c9d9ee;
-  }
-
-  .faq summary {
-   list-style: none;
-   cursor: pointer;
-   padding: 20px 24px;
-   font-weight: 700;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   gap: 16px;
-   color: var(--blue-900);
-  }
-
-  .faq summary::-webkit-details-marker {
-   display: none;
-  }
-
-  .faq summary::after {
-   content: "+";
-   flex: none;
-   width: 30px;
-   height: 30px;
-   border-radius: 50%;
-   background: var(--blue-100);
-   color: var(--blue-800);
-   display: grid;
-   place-items: center;
-   font-size: 20px;
-   transition: transform .25s, background .25s;
-  }
-
-  .faq details[open] summary::after {
-   transform: rotate(45deg);
-   background: var(--green-100);
-   color: var(--green-700);
-  }
-
-  .faq details p {
-   padding: 0 24px 22px;
-   color: var(--muted);
-  }
-
-  /* ---------- Kontak ---------- */
-  .contact {
-   display: grid;
-   grid-template-columns: .85fr 1.15fr;
-   gap: 32px;
-   align-items: stretch;
-  }
-
-  .contact-info {
-   display: grid;
-   gap: 16px;
-   align-content: start;
-  }
-
-  .ci {
-   display: flex;
-   gap: 16px;
-   background: #fff;
-   border: 1px solid var(--line);
-   padding: 20px;
-   border-radius: 16px;
-  }
-
-  .ci .ic {
-   width: 48px;
-   height: 48px;
-   flex: none;
-   border-radius: 14px;
-   display: grid;
-   place-items: center;
-   background: var(--blue-100);
-   color: var(--blue-600);
-  }
-
-  .ci:nth-child(even) .ic {
-   background: var(--green-100);
-   color: var(--green-700);
-  }
-
-  .ci .ic svg {
-   width: 22px;
-   height: 22px;
-  }
-
-  .ci b {
-   display: block;
-   color: var(--blue-900);
-   margin-bottom: 2px;
-  }
-
-  .ci span {
-   color: var(--muted);
-   font-size: 15px;
-   overflow-wrap: anywhere;
-  }
-
-  .contact>*,
-  .about>*,
-  .vm-grid>*,
-  .ppdb-box>* {
-   min-width: 0;
-  }
-
-  footer li {
-   overflow-wrap: anywhere;
-  }
-
-  .map {
-   border-radius: 22px;
-   overflow: hidden;
-   border: 1px solid var(--line);
-   box-shadow: var(--shadow-sm);
-   min-height: 380px;
-  }
-
-  .map iframe {
-   width: 100%;
-   height: 100%;
-   min-height: 380px;
-   border: 0;
-   display: block;
-  }
-
-  /* ---------- Footer ---------- */
-  footer {
-   background: var(--blue-900);
-   color: #b7c9e3;
-   padding-top: 72px;
-  }
-
-  .foot-grid {
-   display: grid;
-   grid-template-columns: 1.4fr .8fr .8fr 1fr;
-   gap: 44px;
-   padding-bottom: 52px;
-  }
-
-  footer .brand-text strong {
-   color: #fff;
-  }
-
-  footer .brand-text span {
-   color: #8fa9cc;
-  }
-
-  footer p {
-   margin-top: 18px;
-   font-size: 14.5px;
-   max-width: 340px;
-  }
-
-  footer h4 {
-   color: #fff;
-   font-family: var(--font);
-   font-size: 15px;
-   letter-spacing: .06em;
-   text-transform: uppercase;
-   margin-bottom: 18px;
-  }
-
-  footer li {
-   margin-bottom: 11px;
-   font-size: 14.5px;
-  }
-
-  footer li a {
-   transition: color .2s, padding .2s;
-  }
-
-  footer li a:hover {
-   color: #7fe0a9;
-   padding-left: 4px;
-  }
-
-  .foot-bottom {
-   border-top: 1px solid rgba(255, 255, 255, .12);
-   padding-block: 22px;
-   text-align: center;
-   font-size: 13.5px;
-   color: #8fa9cc;
-  }
-
-  /* ---------- Floating ---------- */
-  .wa-float {
-   position: fixed;
-   right: 22px;
-   bottom: 22px;
-   z-index: 60;
-   width: 58px;
-   height: 58px;
-   border-radius: 50%;
-   background: #25D366;
-   color: #fff;
-   display: grid;
-   place-items: center;
-   box-shadow: 0 10px 26px rgba(37, 211, 102, .45);
-   transition: transform .2s;
-  }
-
-  .wa-float:hover {
-   transform: scale(1.08);
-  }
-
-  .wa-float svg {
-   width: 30px;
-   height: 30px;
-  }
-
-  .to-top {
-   position: fixed;
-   right: 28px;
-   bottom: 94px;
-   z-index: 60;
-   width: 46px;
-   height: 46px;
-   border-radius: 50%;
-   border: 0;
-   background: var(--blue-800);
-   color: #fff;
-   cursor: pointer;
-   display: grid;
-   place-items: center;
-   box-shadow: var(--shadow);
-   opacity: 0;
-   pointer-events: none;
-   transform: translateY(10px);
-   transition: opacity .25s, transform .25s;
-  }
-
-  .to-top.show {
-   opacity: 1;
-   pointer-events: auto;
-   transform: none;
-  }
-
-  .to-top svg {
-   width: 20px;
-   height: 20px;
-  }
-
-  /* ---------- Reveal ---------- */
-  .reveal {
-   opacity: 0;
-   transform: translateY(26px);
-   transition: opacity .7s ease, transform .7s ease;
-  }
-
-  .reveal.in {
-   opacity: 1;
-   transform: none;
-  }
-
-  .d1 {
-   transition-delay: .08s;
-  }
-
-  .d2 {
-   transition-delay: .16s;
-  }
-
-  .d3 {
-   transition-delay: .24s;
-  }
-
-  /* ---------- Responsive ---------- */
-  @media (max-width: 1020px) {
-   .hero .container {
-    grid-template-columns: 1fr;
-    padding-block: 64px 110px;
-    gap: 46px;
-   }
-
-   .hero-visual {
-    width: 100%;
-    max-width: 460px;
-    margin-inline: auto;
-   }
-
-   .about,
-   .vm-grid,
-   .contact,
-   .ppdb-box {
-    grid-template-columns: 1fr;
-   }
-
-   .about-photo {
-    max-width: 440px;
-   }
-
-   .cards-3,
-   .news-grid,
-   .grades {
-    grid-template-columns: 1fr 1fr;
-   }
-
-   .fas-grid,
-   .steps {
-    grid-template-columns: 1fr 1fr;
-   }
-
-   .foot-grid {
-    grid-template-columns: 1fr 1fr;
-   }
-  }
-
-  @media (max-width: 1060px) {
-   .burger {
-    display: flex;
-   }
-
-   .menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #fff;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 14px 4% 24px;
-    gap: 2px;
-    border-bottom: 1px solid var(--line);
-    box-shadow: var(--shadow);
-    transform: translateY(-12px);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity .25s, transform .25s, visibility .25s;
-    max-height: calc(100vh - 80px);
-    max-height: calc(100dvh - 80px);
-    overflow-y: auto;
-    overscroll-behavior: contain;
-   }
-
-   .menu.open {
-    opacity: 1;
-    transform: none;
-    visibility: visible;
-    pointer-events: auto;
-   }
-
-   .menu a {
-    padding: 14px 16px;
-    border-radius: 12px;
-   }
-
-   .menu .btn {
-    margin: 10px 0 0;
-    justify-content: center;
-   }
-  }
-
-  @media (max-width: 680px) {
-   section {
-    padding-block: 68px;
-   }
-
-   .stats-grid {
-    grid-template-columns: 1fr 1fr;
-   }
-
-   .stat:nth-child(2) {
-    border-right: 0;
-   }
-
-   .stat:nth-child(-n+2) {
-    border-bottom: 1px solid var(--line);
-   }
-
-   .cards-3,
-   .news-grid,
-   .grades,
-   .steps,
-   .checks {
-    grid-template-columns: 1fr;
-   }
-
-   .fas-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-   }
-
-   .gallery {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 150px;
-    gap: 12px;
-   }
-
-   .foot-grid {
-    grid-template-columns: 1fr;
-    gap: 34px;
-   }
-
-   .vm-card {
-    padding: 30px 24px;
-   }
-
-   .fc-1 {
-    left: 8px;
-   }
-
-   .fc-2 {
-    right: 8px;
-   }
-
-   .brand-text strong {
-    font-size: 17px;
-   }
-  }
-
-  /* ---------- Penyempurnaan mobile ---------- */
-  @media (max-width: 680px) {
-   .container {
-    width: 90%;
-   }
-
-   .btn {
-    padding: 13px 22px;
-    font-size: 14.5px;
-   }
-
-   .nav .container {
-    height: 68px;
-   }
-
-   .menu {
-    max-height: calc(100vh - 72px);
-    max-height: calc(100dvh - 72px);
-   }
-
-   .brand-mark {
-    width: 40px;
-    height: 40px;
-   }
-
-   .burger {
-    width: 44px;
-    height: 44px;
-   }
-
-   .hero .container {
-    padding-block: 44px 96px;
-    gap: 36px;
-   }
-
-   .eyebrow {
-    font-size: 12px;
-    padding: 6px 14px;
-   }
-
-   .hero h1 {
-    font-size: 31px;
-    margin: 18px 0 14px;
-   }
-
-   .hero p.lead {
-    font-size: 16px;
-   }
-
-   .hero-cta {
-    margin-top: 26px;
-   }
-
-   .hero-cta .btn {
-    flex: 1 1 100%;
-    justify-content: center;
-   }
-
-   .hero-visual .photo {
-    aspect-ratio: 4/3.4;
-    border-radius: 22px;
-    border-width: 4px;
-   }
-
-   .float-card {
-    padding: 9px 12px;
-    gap: 9px;
-    border-radius: 13px;
-   }
-
-   .float-card b {
-    font-size: 15px;
-   }
-
-   .float-card small {
-    font-size: 11px;
-   }
-
-   .float-card .ic {
-    width: 34px;
-    height: 34px;
-    border-radius: 10px;
-   }
-
-   .float-card .ic svg {
-    width: 18px;
-    height: 18px;
-   }
-
-   .fc-1 {
-    left: 10px;
-    bottom: 12px;
-   }
-
-   .fc-2 {
-    right: 10px;
-    top: 12px;
-   }
-
-   .hero-wave svg {
-    height: 40px;
-   }
-
-   .stats {
-    margin-top: -44px;
-   }
-
-   .stats-grid {
-    border-radius: 20px;
-   }
-
-   .stat {
-    padding: 22px 10px;
-   }
-
-   .stat b {
-    font-size: 31px;
-   }
-
-   .stat b sup {
-    font-size: 18px;
-   }
-
-   .stat span {
-    font-size: 12.5px;
-   }
-
-   section {
-    padding-block: 60px;
-   }
-
-   .sec-head {
-    margin-bottom: 36px;
-   }
-
-   .sec-head p {
-    font-size: 15.5px;
-   }
-
-   .tag {
-    font-size: 11.5px;
-    padding: 5px 12px;
-    margin-bottom: 12px;
-   }
-
-   .about {
-    gap: 40px;
-   }
-
-   .about-photo {
-    max-width: none;
-   }
-
-   .about-photo::before {
-    inset: 12px -8px -12px 12px;
-   }
-
-   .about .photo {
-    aspect-ratio: 4/4.2;
-   }
-
-   .about p {
-    font-size: 15.5px;
-   }
-
-   .about blockquote {
-    font-size: 16.5px;
-    padding: 16px 18px;
-   }
-
-   .vm-card h3 {
-    font-size: 22px;
-   }
-
-   .vm-card.visi p {
-    font-size: 16.5px;
-   }
-
-   .feature {
-    padding: 26px;
-   }
-
-   .grade {
-    padding: 28px;
-   }
-
-   .grade .n {
-    font-size: 52px;
-   }
-
-   .chips {
-    gap: 8px;
-   }
-
-   .chip {
-    padding: 10px 16px;
-    font-size: 14px;
-   }
-
-   .chip svg {
-    width: 18px;
-    height: 18px;
-   }
-
-   .news-body {
-    padding: 20px;
-   }
-
-   .news h3 {
-    font-size: 18px;
-   }
-
-   .fas {
-    aspect-ratio: 1/1.15;
-   }
-
-   .fas span {
-    left: 14px;
-    right: 14px;
-    bottom: 13px;
-    font-size: 15.5px;
-    line-height: 1.25;
-   }
-
-   .fas span small {
-    font-size: 12px;
-    margin-top: 3px;
-   }
-
-   .gallery {
-    grid-auto-rows: 130px;
-   }
-
-   .step {
-    padding: 22px 20px;
-   }
-
-   .req,
-   .cta-card {
-    padding: 26px 22px;
-   }
-
-   .req li {
-    font-size: 15px;
-   }
-
-   .faq summary {
-    padding: 16px 18px;
-    font-size: 15px;
-   }
-
-   .faq details p {
-    padding: 0 18px 18px;
-    font-size: 15px;
-   }
-
-   .ci {
-    padding: 16px;
-    gap: 14px;
-   }
-
-   .map,
-   .map iframe {
-    min-height: 300px;
-   }
-
-   footer {
-    padding-top: 52px;
-   }
-
-   .foot-grid {
-    padding-bottom: 36px;
-   }
-
-   .wa-float {
-    width: 52px;
-    height: 52px;
-    right: 16px;
-    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
-   }
-
-   .wa-float svg {
-    width: 27px;
-    height: 27px;
-   }
-
-   .to-top {
-    width: 42px;
-    height: 42px;
-    right: 21px;
-    bottom: calc(80px + env(safe-area-inset-bottom, 0px));
-   }
-  }
-
-  @media (max-width: 380px) {
-   .brand-text span {
-    display: none;
-   }
-
-   .brand-text strong {
-    font-size: 17px;
-   }
-
-   .hero h1 {
-    font-size: 28px;
-   }
-
-   .stat b {
-    font-size: 27px;
-   }
-
-   .fas-grid {
-    grid-template-columns: 1fr;
-   }
-
-   .fas {
-    aspect-ratio: 16/10;
-   }
-
-   .fas span {
-    font-size: 17px;
-   }
-
-   .gallery {
-    grid-auto-rows: 110px;
-   }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-   html {
-    scroll-behavior: auto;
-   }
-
-   .reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
-   }
-
-   .float-card {
-    animation: none;
-   }
-  }
- </style>
+    :root {
+      --blue-900: #082A57;
+      --blue-800: #0B3C7A;
+      --blue-600: #1D5FBF;
+      --blue-100: #E3EEFB;
+      --green-700: #137A44;
+      --green-600: #1E9E5A;
+      --green-100: #E1F5EA;
+      --ink: #12233D;
+      --muted: #5A6B82;
+      --line: #E1E8F0;
+      --bg: #F5F8FC;
+      --white: #fff;
+      --grad: linear-gradient(135deg, var(--blue-800) 0%, var(--blue-600) 55%, var(--green-600) 130%);
+      --radius: 18px;
+      --shadow-sm: 0 2px 8px rgba(11, 60, 122, .06);
+      --shadow: 0 12px 32px rgba(11, 60, 122, .12);
+      --shadow-lg: 0 24px 60px rgba(8, 42, 87, .22);
+      --font: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      --serif: 'Lora', Georgia, serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    body {
+      overflow-x: clip;
+      margin: 0;
+      font-family: var(--font);
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img,
+    svg {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: var(--serif);
+      line-height: 1.2;
+      margin: 0;
+      color: var(--blue-900);
+    }
+
+    p {
+      margin: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--green-600);
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin-inline: auto;
+    }
+
+    .skip {
+      position: absolute;
+      left: -999px;
+      top: 8px;
+      background: var(--white);
+      padding: 10px 16px;
+      border-radius: 8px;
+      z-index: 100;
+    }
+
+    .skip:focus {
+      left: 8px;
+    }
+
+    /* ---------- Placeholder foto: set  style="--img:url('assets/foto.jpg')"  untuk mengganti ---------- */
+    .photo {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background-color: var(--blue-100);
+      background-image: var(--img, linear-gradient(135deg, #cfe2f8, #c8ecd8));
+      background-size: cover;
+      background-position: center;
+      display: grid;
+      place-items: center;
+      color: rgba(11, 60, 122, .35);
+    }
+
+    .photo svg {
+      width: 38%;
+      max-width: 72px;
+      opacity: var(--ph, 1);
+    }
+
+    .photo[style*="--img"] svg {
+      display: none;
+    }
+
+    /* ---------- Tombol ---------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 26px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 15px;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: transform .2s, box-shadow .2s, background .2s, color .2s;
+      font-family: var(--font);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .btn-green {
+      background: var(--green-600);
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(30, 158, 90, .35);
+    }
+
+    .btn-green:hover {
+      background: var(--green-700);
+    }
+
+    .btn-blue {
+      background: var(--blue-800);
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(11, 60, 122, .3);
+    }
+
+    .btn-blue:hover {
+      background: var(--blue-900);
+    }
+
+    .btn-ghost {
+      border-color: rgba(255, 255, 255, .55);
+      color: #fff;
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, .14);
+    }
+
+    .btn-outline {
+      border-color: var(--blue-800);
+      color: var(--blue-800);
+    }
+
+    .btn-outline:hover {
+      background: var(--blue-800);
+      color: #fff;
+    }
+
+    /* ---------- Navbar ---------- */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, .92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid transparent;
+      transition: box-shadow .25s, border-color .25s;
+    }
+
+    .nav.scrolled {
+      box-shadow: var(--shadow-sm);
+      border-color: var(--line);
+    }
+
+    .nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 76px;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+      flex: none;
+    }
+
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .brand-mark-foot {
+      background: #fff;
+      border-radius: 12px;
+      padding: 4px;
+      width: 50px;
+      height: 50px;
+    }
+
+    .brand-text strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: 19px;
+      color: var(--blue-900);
+      line-height: 1.1;
+    }
+
+    .brand-text span {
+      font-size: 11.5px;
+      color: var(--muted);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .menu a {
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--ink);
+      transition: background .2s, color .2s;
+    }
+
+    .menu a:hover,
+    .menu a.active {
+      background: var(--blue-100);
+      color: var(--blue-800);
+    }
+
+    .menu .btn {
+      margin-left: 8px;
+      padding: 10px 20px;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .menu .btn:hover {
+      background: var(--green-700);
+      color: #fff;
+    }
+
+    .burger {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border: 0;
+      background: var(--blue-100);
+      border-radius: 12px;
+      cursor: pointer;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .burger span {
+      width: 22px;
+      height: 2.5px;
+      background: var(--blue-800);
+      border-radius: 2px;
+      transition: transform .25s, opacity .25s;
+    }
+
+    .burger[aria-expanded="true"] span:nth-child(1) {
+      transform: translateY(7.5px) rotate(45deg);
+    }
+
+    .burger[aria-expanded="true"] span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .burger[aria-expanded="true"] span:nth-child(3) {
+      transform: translateY(-7.5px) rotate(-45deg);
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative;
+      background: var(--grad);
+      color: #fff;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      opacity: .5;
+      background:
+        radial-gradient(circle at 85% 15%, rgba(255, 255, 255, .22), transparent 38%),
+        radial-gradient(circle at 5% 95%, rgba(30, 158, 90, .55), transparent 40%);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      opacity: .07;
+      background-image: radial-gradient(#fff 1.2px, transparent 1.2px);
+      background-size: 26px 26px;
+    }
+
+    .hero .container {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 56px;
+      align-items: center;
+      padding-block: 88px 120px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 7px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .14);
+      border: 1px solid rgba(255, 255, 255, .28);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .eyebrow i {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #7ff0ae;
+      box-shadow: 0 0 0 4px rgba(127, 240, 174, .25);
+    }
+
+    .hero h1 {
+      color: #fff;
+      font-size: clamp(34px, 5.2vw, 58px);
+      margin: 0 0 18px;
+      font-weight: 700;
+      letter-spacing: -.01em;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: #9af2c1;
+    }
+
+    .hero p.lead {
+      font-size: 18px;
+      color: #dbe8fa;
+      max-width: 540px;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 14px;
+      margin-top: 34px;
+      flex-wrap: wrap;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-visual .photo {
+      aspect-ratio: 4/4.4;
+      border-radius: 28px;
+      box-shadow: var(--shadow-lg);
+      border: 6px solid rgba(255, 255, 255, .22);
+      --ph: .6;
+    }
+
+    .float-card {
+      position: absolute;
+      background: #fff;
+      color: var(--ink);
+      border-radius: 16px;
+      padding: 14px 18px;
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      animation: bob 5s ease-in-out infinite;
+    }
+
+    .float-card b {
+      display: block;
+      font-size: 20px;
+      font-family: var(--serif);
+      color: var(--blue-800);
+      line-height: 1.1;
+    }
+
+    .float-card small {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .float-card .ic {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: var(--green-100);
+      color: var(--green-700);
+    }
+
+    .float-card .ic svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .fc-1 {
+      left: -34px;
+      bottom: 56px;
+    }
+
+    .fc-2 {
+      right: -14px;
+      top: 38px;
+      animation-delay: -2.4s;
+    }
+
+    .fc-2 .ic {
+      background: var(--blue-100);
+      color: var(--blue-600);
+    }
+
+    @keyframes bob {
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .hero-wave {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      line-height: 0;
+    }
+
+    .hero-wave svg {
+      width: 100%;
+      height: 70px;
+    }
+
+    /* ---------- Stats ---------- */
+    .stats {
+      margin-top: -62px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .stat {
+      padding: 30px 24px;
+      text-align: center;
+      border-right: 1px solid var(--line);
+    }
+
+    .stat:last-child {
+      border: 0;
+    }
+
+    .stat b {
+      display: block;
+      font-family: var(--serif);
+      font-size: 40px;
+      color: var(--blue-800);
+      line-height: 1;
+    }
+
+    .stat b sup {
+      color: var(--green-600);
+      font-size: 24px;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .stat em {
+      font-style: normal;
+    }
+
+    .stat .short {
+      display: none;
+    }
+
+    /* ---------- Section umum ---------- */
+    section {
+      padding-block: 92px;
+    }
+
+    .sec-head {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 56px;
+    }
+
+    .sec-head.left {
+      text-align: left;
+      margin-left: 0;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 12.5px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--green-700);
+      background: var(--green-100);
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    .sec-head h2 {
+      font-size: clamp(28px, 3.6vw, 40px);
+    }
+
+    .sec-head h2::after {
+      content: "";
+      display: block;
+      width: 56px;
+      height: 4px;
+      border-radius: 4px;
+      background: linear-gradient(90deg, var(--blue-600), var(--green-600));
+      margin: 18px auto 0;
+    }
+
+    .ppdb .sec-head h2::after {
+      background: #9af2c1;
+    }
+
+    .sec-head p {
+      color: var(--muted);
+      margin-top: 14px;
+      font-size: 17px;
+    }
+
+    .bg-soft {
+      background: var(--bg);
+    }
+
+    /* ---------- Sambutan ---------- */
+    .about {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .about .photo {
+      aspect-ratio: 4/5;
+      border-radius: 26px;
+      --ph: .6;
+    }
+
+    .about-photo {
+      position: relative;
+    }
+
+    .about-photo::before {
+      content: "";
+      position: absolute;
+      inset: 22px -22px -22px 22px;
+      border-radius: 26px;
+      background: var(--grad);
+      opacity: .16;
+      z-index: -1;
+    }
+
+    .about-photo .caption {
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      background: rgba(255, 255, 255, .95);
+      backdrop-filter: blur(6px);
+      border-radius: 14px;
+      padding: 14px 18px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .about-photo .caption b {
+      display: block;
+      color: var(--blue-900);
+      font-family: var(--serif);
+    }
+
+    .about-photo .caption small {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .about h2 {
+      font-size: clamp(28px, 3.4vw, 38px);
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-size: 16.5px;
+    }
+
+    .about blockquote {
+      margin: 26px 0;
+      padding: 18px 22px;
+      border-left: 4px solid var(--green-600);
+      background: var(--green-100);
+      border-radius: 0 14px 14px 0;
+      font-family: var(--serif);
+      font-size: 18px;
+      color: var(--blue-900);
+      font-style: italic;
+    }
+
+    .checks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 24px;
+      margin-top: 8px;
+    }
+
+    .checks li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .checks svg {
+      width: 22px;
+      height: 22px;
+      color: var(--green-600);
+      flex: none;
+      margin-top: 2px;
+    }
+
+    /* ---------- Visi Misi ---------- */
+    .vm-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .vm-card {
+      border-radius: 20px;
+      padding: 44px;
+      position: relative;
+    }
+
+    .vm-card h3 {
+      font-family: var(--font);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .vm-card h3::after {
+      content: "";
+      height: 1px;
+      flex: 1;
+      background: currentColor;
+      opacity: .25;
+    }
+
+    .vm-card.visi {
+      background: var(--blue-900);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-top: 4px solid var(--green-600);
+    }
+
+    .vm-card.visi h3 {
+      color: #9af2c1;
+    }
+
+    .vm-card.visi p {
+      font-family: var(--serif);
+      font-size: 24px;
+      line-height: 1.5;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .vm-card.misi {
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .vm-card.misi h3 {
+      color: var(--green-700);
+    }
+
+    .misi ol {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: m;
+    }
+
+    .misi li {
+      counter-increment: m;
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 8px;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink);
+      font-size: 16px;
+    }
+
+    .misi li:first-child {
+      padding-top: 0;
+    }
+
+    .misi li:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .misi li::before {
+      content: counter(m, decimal-leading-zero);
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 17px;
+      color: var(--blue-600);
+      line-height: 1.6;
+    }
+
+    /* ---------- Program unggulan ---------- */
+    .cards-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+
+    .feature {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 32px;
+      transition: transform .25s, box-shadow .25s, border-color .25s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 4px;
+      width: 100%;
+      background: var(--grad);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .35s;
+    }
+
+    .feature:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+      border-color: transparent;
+    }
+
+    .feature:hover::before {
+      transform: scaleX(1);
+    }
+
+    .feature .ic {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 22px;
+      background: var(--blue-100);
+      color: var(--blue-600);
+    }
+
+    .feature:nth-child(even) .ic {
+      background: var(--green-100);
+      color: var(--green-700);
+    }
+
+    .feature .ic svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    .feature h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      color: var(--muted);
+      font-size: 15.5px;
+    }
+
+    .cards-4 {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .cards-4 .feature {
+      padding: 30px 26px;
+    }
+
+    /* ---------- Kurikulum / Jenjang ---------- */
+    .grades {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+
+    .grade {
+      border-radius: 22px;
+      padding: 34px;
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .grade .n {
+      font-family: var(--serif);
+      font-size: 64px;
+      line-height: 1;
+      font-weight: 700;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .grade h3 {
+      margin: 10px 0 14px;
+      font-size: 22px;
+    }
+
+    .grade li {
+      display: flex;
+      gap: 10px;
+      color: var(--muted);
+      padding: 6px 0;
+      font-size: 15px;
+    }
+
+    .grade li::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green-600);
+      margin-top: 9px;
+      flex: none;
+    }
+
+    /* ---------- Ekstrakurikuler ---------- */
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 22px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--blue-900);
+      transition: all .2s;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .chip svg {
+      width: 20px;
+      height: 20px;
+      color: var(--green-600);
+    }
+
+    .chip:hover {
+      background: var(--blue-800);
+      color: #fff;
+      transform: translateY(-3px);
+      border-color: var(--blue-800);
+    }
+
+    .chip:hover svg {
+      color: #9af2c1;
+    }
+
+    /* ---------- Berita ---------- */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+
+    .news {
+      background: #fff;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      transition: transform .25s, box-shadow .25s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .news:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .news .photo {
+      aspect-ratio: 16/10;
+      border-radius: 0;
+      --ph: .5;
+    }
+
+    .news-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+    }
+
+    .news-meta {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .news-meta .cat {
+      color: var(--green-700);
+      background: var(--green-100);
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    .news h3 {
+      font-size: 19px;
+    }
+
+    .news p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .news .more {
+      margin-top: auto;
+      padding-top: 6px;
+      color: var(--blue-600);
+      font-weight: 700;
+      font-size: 14.5px;
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .news .more svg {
+      width: 16px;
+      height: 16px;
+      transition: transform .2s;
+    }
+
+    .news:hover .more svg {
+      transform: translateX(4px);
+    }
+
+    .news h3,
+    .news p {
+      overflow-wrap: anywhere;
+    }
+
+    .news h3.clamp {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .news p.clamp {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .news.ig .cat {
+      background: linear-gradient(135deg, var(--blue-100), var(--green-100));
+      color: var(--blue-800);
+    }
+
+    .ig-follow {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .ig-follow .btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* ---------- Fasilitas ---------- */
+    .fas-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .fas {
+      position: relative;
+      aspect-ratio: 1/1.1;
+      border-radius: var(--radius);
+      overflow: hidden;
+      --ph: .55;
+    }
+
+    .fas::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 45%, rgba(8, 42, 87, .88));
+    }
+
+    .fas span {
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 18px;
+      z-index: 2;
+      color: #fff;
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 19px;
+    }
+
+    .fas span small {
+      display: block;
+      font-family: var(--font);
+      font-size: 13px;
+      font-weight: 500;
+      color: #c6dbf5;
+      margin-top: 2px;
+    }
+
+    .fas .photo,
+    .fas {
+      transition: transform .3s;
+    }
+
+    .fas:hover {
+      transform: scale(1.025);
+    }
+
+    /* ---------- Galeri ---------- */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 190px;
+      gap: 16px;
+    }
+
+    .gallery .photo {
+      border-radius: 16px;
+      --ph: .5;
+      transition: transform .3s;
+    }
+
+    .gallery .photo:hover {
+      transform: scale(1.03);
+    }
+
+    .gallery .w2 {
+      grid-column: span 2;
+    }
+
+    .gallery .h2 {
+      grid-row: span 2;
+    }
+
+    /* ---------- PPDB ---------- */
+    .ppdb {
+      background: var(--grad);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .ppdb::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      opacity: .08;
+      background-image: radial-gradient(#fff 1.2px, transparent 1.2px);
+      background-size: 26px 26px;
+    }
+
+    .ppdb .sec-head h2 {
+      color: #fff;
+    }
+
+    .ppdb .sec-head p {
+      color: #d6e5f9;
+    }
+
+    .ppdb .tag {
+      background: rgba(255, 255, 255, .16);
+      color: #b8f5d2;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      counter-reset: s;
+      position: relative;
+    }
+
+    .step {
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .22);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      backdrop-filter: blur(6px);
+      counter-increment: s;
+    }
+
+    .step::before {
+      content: counter(s);
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #fff;
+      color: var(--blue-800);
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    .step h3 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      color: #d6e5f9;
+      font-size: 14.5px;
+    }
+
+    .ppdb-box {
+      margin-top: 44px;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 26px;
+    }
+
+    .req,
+    .cta-card {
+      border-radius: 22px;
+      padding: 34px;
+    }
+
+    .req {
+      background: #fff;
+      color: var(--ink);
+    }
+
+    .req h3 {
+      margin-bottom: 16px;
+      font-size: 22px;
+    }
+
+    .req li {
+      display: flex;
+      gap: 10px;
+      padding: 7px 0;
+      color: var(--muted);
+      font-size: 15.5px;
+    }
+
+    .req li svg {
+      width: 20px;
+      height: 20px;
+      color: var(--green-600);
+      flex: none;
+      margin-top: 3px;
+    }
+
+    .cta-card {
+      background: rgba(255, 255, 255, .12);
+      border: 1px solid rgba(255, 255, 255, .3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .cta-card h3 {
+      color: #fff;
+      font-size: 24px;
+    }
+
+    .cta-card p {
+      color: #d6e5f9;
+    }
+
+    .cta-card .btn {
+      justify-content: center;
+    }
+
+    .cta-card .btn-white {
+      background: #fff;
+      color: var(--blue-800);
+    }
+
+    /* ---------- FAQ ---------- */
+    .faq {
+      max-width: 820px;
+      margin-inline: auto;
+      display: grid;
+      gap: 14px;
+    }
+
+    .faq details {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: box-shadow .2s;
+    }
+
+    .faq details[open] {
+      box-shadow: var(--shadow-sm);
+      border-color: #c9d9ee;
+    }
+
+    .faq summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 20px 24px;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      color: var(--blue-900);
+    }
+
+    .faq summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq summary {
+      transition: color .2s;
+    }
+
+    .faq summary:hover {
+      color: var(--blue-600);
+    }
+
+    .faq summary::after {
+      content: "";
+      flex: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      background: var(--blue-100) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230B3C7A' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") center / 18px no-repeat;
+      transition: transform .3s ease, background-color .25s, box-shadow .25s;
+    }
+
+    .faq summary:hover::after {
+      box-shadow: 0 0 0 4px rgba(29, 95, 191, .12);
+    }
+
+    .faq details[open] summary::after {
+      transform: rotate(180deg);
+      background: var(--blue-800) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") center / 18px no-repeat;
+      box-shadow: 0 6px 16px rgba(11, 60, 122, .28);
+    }
+
+    .faq details[open] {
+      border-left: 4px solid var(--green-600);
+    }
+
+    .faq details p {
+      padding: 0 24px 22px;
+      color: var(--muted);
+    }
+
+    /* ---------- Kontak ---------- */
+    .contact {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 32px;
+      align-items: stretch;
+    }
+
+    .contact-info {
+      display: grid;
+      gap: 16px;
+      align-content: start;
+    }
+
+    .ci {
+      display: flex;
+      gap: 16px;
+      background: #fff;
+      border: 1px solid var(--line);
+      padding: 20px;
+      border-radius: 16px;
+    }
+
+    .ci .ic {
+      width: 48px;
+      height: 48px;
+      flex: none;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--blue-100);
+      color: var(--blue-600);
+    }
+
+    .ci:nth-child(even) .ic {
+      background: var(--green-100);
+      color: var(--green-700);
+    }
+
+    .ci .ic svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .ci b {
+      display: block;
+      color: var(--blue-900);
+      margin-bottom: 2px;
+    }
+
+    .ci span {
+      color: var(--muted);
+      font-size: 15px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact>*,
+    .about>*,
+    .vm-grid>*,
+    .ppdb-box>* {
+      min-width: 0;
+    }
+
+    footer li {
+      overflow-wrap: anywhere;
+    }
+
+    .map {
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-sm);
+      min-height: 380px;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 380px;
+      border: 0;
+      display: block;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      background: var(--blue-900);
+      color: #b7c9e3;
+      padding-top: 68px;
+      position: relative;
+    }
+
+    footer::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--blue-600), var(--green-600));
+    }
+
+    .foot-grid {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr .7fr 1.3fr;
+      gap: 48px;
+      padding-bottom: 48px;
+    }
+
+    footer .brand-text strong {
+      color: #fff;
+      font-size: 21px;
+    }
+
+    footer .brand-text span {
+      color: #8fa9cc;
+    }
+
+    .foot-brand .btn {
+      margin-top: 24px;
+      padding: 11px 20px;
+      font-size: 14px;
+    }
+
+    .foot-brand .btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    footer h4 {
+      color: #fff;
+      font-family: var(--font);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+    }
+
+    footer li {
+      margin-bottom: 12px;
+      font-size: 14.5px;
+    }
+
+    footer li a {
+      transition: color .2s;
+    }
+
+    footer li a:hover {
+      color: #7fe0a9;
+    }
+
+    .foot-contact li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .foot-contact svg {
+      width: 17px;
+      height: 17px;
+      flex: none;
+      margin-top: 3px;
+      color: #7fe0a9;
+    }
+
+    .foot-bottom {
+      border-top: 1px solid rgba(255, 255, 255, .12);
+      padding-block: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 13.5px;
+      color: #8fa9cc;
+    }
+
+    /* ---------- Floating ---------- */
+    .wa-float {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 60;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 10px 26px rgba(37, 211, 102, .45);
+      transition: transform .2s;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.08);
+    }
+
+    .wa-float svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    .to-top {
+      position: fixed;
+      right: 28px;
+      bottom: 94px;
+      z-index: 60;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 0;
+      background: var(--blue-800);
+      color: #fff;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      box-shadow: var(--shadow);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(10px);
+      transition: opacity .25s, transform .25s;
+    }
+
+    .to-top.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: none;
+    }
+
+    .to-top svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* ---------- Reveal ---------- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none;
+    }
+
+    .d1 {
+      transition-delay: .08s;
+    }
+
+    .d2 {
+      transition-delay: .16s;
+    }
+
+    .d3 {
+      transition-delay: .24s;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 1020px) {
+      .hero .container {
+        grid-template-columns: 1fr;
+        padding-block: 64px 110px;
+        gap: 46px;
+      }
+
+      .hero-visual {
+        width: 100%;
+        max-width: 460px;
+        margin-inline: auto;
+      }
+
+      .about,
+      .vm-grid,
+      .contact,
+      .ppdb-box {
+        grid-template-columns: 1fr;
+      }
+
+      .about-photo {
+        max-width: 440px;
+      }
+
+      .cards-3,
+      .news-grid,
+      .grades {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .fas-grid,
+      .steps,
+      .cards-4 {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .foot-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 1060px) {
+      .burger {
+        display: flex;
+      }
+
+      .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 14px 4% 24px;
+        gap: 2px;
+        border-bottom: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        transform: translateY(-12px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity .25s, transform .25s, visibility .25s;
+        max-height: calc(100vh - 80px);
+        max-height: calc(100dvh - 80px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+      }
+
+      .menu.open {
+        opacity: 1;
+        transform: none;
+        visibility: visible;
+        pointer-events: auto;
+      }
+
+      .menu a {
+        padding: 14px 16px;
+        border-radius: 12px;
+      }
+
+      .menu .btn {
+        margin: 10px 0 0;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 680px) {
+      section {
+        padding-block: 68px;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .cards-3,
+      .cards-4,
+      .news-grid,
+      .grades,
+      .steps,
+      .checks {
+        grid-template-columns: 1fr;
+      }
+
+      .fas-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 150px;
+        gap: 12px;
+      }
+
+      .foot-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 34px 24px;
+      }
+
+      .foot-brand,
+      .foot-contact-col {
+        grid-column: 1 / -1;
+      }
+
+      .foot-bottom {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
+      .vm-card {
+        padding: 30px 24px;
+      }
+
+      .fc-1 {
+        left: 8px;
+      }
+
+      .fc-2 {
+        right: 8px;
+      }
+
+      .brand-text strong {
+        font-size: 17px;
+      }
+    }
+
+    /* ---------- Penyempurnaan mobile ---------- */
+    @media (max-width: 680px) {
+      .container {
+        width: 90%;
+      }
+
+      .btn {
+        padding: 13px 22px;
+        font-size: 14.5px;
+      }
+
+      .nav .container {
+        height: 68px;
+      }
+
+      .menu {
+        max-height: calc(100vh - 72px);
+        max-height: calc(100dvh - 72px);
+      }
+
+      .brand-mark {
+        width: 40px;
+        height: 40px;
+      }
+
+      .burger {
+        width: 44px;
+        height: 44px;
+      }
+
+      .hero .container {
+        padding-block: 44px 96px;
+        gap: 36px;
+      }
+
+      .eyebrow {
+        font-size: 12px;
+        padding: 6px 14px;
+      }
+
+      .hero h1 {
+        font-size: 31px;
+        margin: 0 0 14px;
+      }
+
+      .hero p.lead {
+        font-size: 16px;
+      }
+
+      .hero-cta {
+        margin-top: 26px;
+      }
+
+      .hero-cta .btn {
+        flex: 1 1 100%;
+        justify-content: center;
+      }
+
+      .hero-visual .photo {
+        aspect-ratio: 4/3.4;
+        border-radius: 22px;
+        border-width: 4px;
+      }
+
+      .float-card {
+        padding: 9px 12px;
+        gap: 9px;
+        border-radius: 13px;
+      }
+
+      .float-card b {
+        font-size: 15px;
+      }
+
+      .float-card small {
+        font-size: 11px;
+      }
+
+      .float-card .ic {
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+      }
+
+      .float-card .ic svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      .fc-1 {
+        left: 10px;
+        bottom: 12px;
+      }
+
+      .fc-2 {
+        right: 10px;
+        top: 12px;
+      }
+
+      .hero-wave svg {
+        height: 40px;
+      }
+
+      .stats {
+        margin-top: -44px;
+      }
+
+      .stats-grid {
+        border-radius: 20px;
+      }
+
+      .stat {
+        padding: 18px 4px;
+      }
+
+      .stat b {
+        font-size: 22px;
+      }
+
+      .stat b sup {
+        font-size: 13px;
+      }
+
+      .stat span {
+        font-size: 11.5px;
+        line-height: 1.3;
+        margin-top: 6px;
+        white-space: nowrap;
+      }
+
+      .stat .full {
+        display: none;
+      }
+
+      .stat .short {
+        display: inline;
+      }
+
+      section {
+        padding-block: 60px;
+      }
+
+      .sec-head {
+        margin-bottom: 36px;
+      }
+
+      .sec-head p {
+        font-size: 15.5px;
+      }
+
+      .tag {
+        font-size: 11.5px;
+        padding: 5px 12px;
+        margin-bottom: 12px;
+      }
+
+      .about {
+        gap: 40px;
+      }
+
+      .about-photo {
+        max-width: none;
+      }
+
+      .about-photo::before {
+        inset: 12px -8px -12px 12px;
+      }
+
+      .about .photo {
+        aspect-ratio: 4/4.2;
+      }
+
+      .about p {
+        font-size: 15.5px;
+      }
+
+      .about blockquote {
+        font-size: 16.5px;
+        padding: 16px 18px;
+      }
+
+      .vm-card.visi p {
+        font-size: 19px;
+      }
+
+      .misi li {
+        font-size: 15px;
+        grid-template-columns: 36px 1fr;
+      }
+
+      .feature {
+        padding: 26px;
+      }
+
+      .grade {
+        padding: 28px;
+      }
+
+      .grade .n {
+        font-size: 52px;
+      }
+
+      .chips {
+        gap: 8px;
+      }
+
+      .chip {
+        padding: 10px 16px;
+        font-size: 14px;
+      }
+
+      .chip svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      .news-body {
+        padding: 20px;
+      }
+
+      .news h3 {
+        font-size: 18px;
+      }
+
+      .fas {
+        aspect-ratio: 1/1.15;
+      }
+
+      .fas span {
+        left: 14px;
+        right: 14px;
+        bottom: 13px;
+        font-size: 15.5px;
+        line-height: 1.25;
+      }
+
+      .fas span small {
+        font-size: 12px;
+        margin-top: 3px;
+      }
+
+      .gallery {
+        grid-auto-rows: 130px;
+      }
+
+      .step {
+        padding: 22px 20px;
+      }
+
+      .req,
+      .cta-card {
+        padding: 26px 22px;
+      }
+
+      .req li {
+        font-size: 15px;
+      }
+
+      .faq summary {
+        padding: 16px 18px;
+        font-size: 15px;
+      }
+
+      .faq details p {
+        padding: 0 18px 18px;
+        font-size: 15px;
+      }
+
+      .ci {
+        padding: 16px;
+        gap: 14px;
+      }
+
+      .map,
+      .map iframe {
+        min-height: 300px;
+      }
+
+      footer {
+        padding-top: 52px;
+      }
+
+      .foot-grid {
+        padding-bottom: 36px;
+      }
+
+      .wa-float {
+        width: 52px;
+        height: 52px;
+        right: 16px;
+        bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+      }
+
+      .wa-float svg {
+        width: 27px;
+        height: 27px;
+      }
+
+      .to-top {
+        width: 42px;
+        height: 42px;
+        right: 21px;
+        bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+      }
+    }
+
+    @media (max-width: 380px) {
+      .brand-text span {
+        display: none;
+      }
+
+      .brand-text strong {
+        font-size: 17px;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .stat b {
+        font-size: 19px;
+      }
+
+      .stat span {
+        font-size: 10.5px;
+      }
+
+      .fas-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .fas {
+        aspect-ratio: 16/10;
+      }
+
+      .fas span {
+        font-size: 17px;
+      }
+
+      .gallery {
+        grid-auto-rows: 110px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      .float-card {
+        animation: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
- <a class="skip" href="#konten">Lewati ke konten utama</a>
+  <a class="skip" href="#konten">Lewati ke konten utama</a>
 
- <!-- ICON SPRITE -->
- <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-   <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
-    <circle cx="12" cy="10" r="3" />
-   </symbol>
-   <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <path
-     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
-   </symbol>
-   <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <rect x="2" y="4" width="20" height="16" rx="2" />
-    <path d="m22 7-10 6L2 7" />
-   </symbol>
-   <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <circle cx="12" cy="12" r="10" />
-    <path d="M12 6v6l4 2" />
-   </symbol>
-   <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
-    stroke-linejoin="round">
-    <path d="M5 12h14M13 6l6 6-6 6" />
-   </symbol>
-   <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
-    stroke-linejoin="round">
-    <circle cx="12" cy="12" r="10" />
-    <path d="m8 12 3 3 5-6" />
-   </symbol>
-   <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z" />
-    <path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5" />
-   </symbol>
-   <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z" />
-   </symbol>
-   <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-    <circle cx="9" cy="7" r="4" />
-    <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
-   </symbol>
-   <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <path d="m22 10-10-5L2 10l10 5z" />
-    <path d="M6 12v5c3 2 9 2 12 0v-5" />
-    <path d="M22 10v6" />
-   </symbol>
-   <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <path
-     d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z" />
-   </symbol>
-   <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <circle cx="12" cy="12" r="10" />
-    <path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z" />
-   </symbol>
-   <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <rect x="4" y="4" width="16" height="16" rx="2" />
-    <rect x="9" y="9" width="6" height="6" />
-    <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3" />
-   </symbol>
-   <symbol id="i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <path d="M9 3h6M10 3v6L4.5 19a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 9V3" />
-    <path d="M7 15h10" />
-   </symbol>
-   <symbol id="i-img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
-    stroke-linejoin="round">
-    <rect x="3" y="3" width="18" height="18" rx="3" />
-    <circle cx="8.5" cy="8.5" r="1.6" />
-    <path d="m21 15-5-5L5 21" />
-   </symbol>
-   <symbol id="i-ball" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <circle cx="12" cy="12" r="10" />
-    <path d="M12 2v20M2 12h20M4.9 4.9c3 3 3 11.2 0 14.2M19.1 4.9c-3 3-3 11.2 0 14.2" />
-   </symbol>
-   <symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <rect x="9" y="2" width="6" height="12" rx="3" />
-    <path d="M19 10v1a7 7 0 0 1-14 0v-1M12 18v4M8 22h8" />
-   </symbol>
-   <symbol id="i-music" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <path d="M9 18V5l12-2v13" />
-    <circle cx="6" cy="18" r="3" />
-    <circle cx="18" cy="16" r="3" />
-   </symbol>
-   <symbol id="i-tent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <path d="M3 21 12 4l9 17zM12 4v17M8 21l4-7 4 7" />
-   </symbol>
-   <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-    <path d="m9 12 2 2 4-4" />
-   </symbol>
-   <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-   </symbol>
-   <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <rect x="2" y="2" width="20" height="20" rx="5" />
-    <path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4zM17.5 6.5h.01" />
-   </symbol>
-   <symbol id="i-yt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round">
-    <path
-     d="M22.5 6.4a2.8 2.8 0 0 0-2-2C18.9 4 12 4 12 4s-6.900 0-8.500.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 1 12a29 29 0 0 0 .5 5.600 2.8 2.8 0 0 0 2 2C5.100 20 12 20 12 20s6.900 0 8.500-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 23 12a29 29 0 0 0-.5-5.600z" />
-    <path d="m9.750 15 5.750-3-5.750-3z" />
-   </symbol>
-  </defs>
- </svg>
-
- <!-- NAVBAR -->
- <header class="nav" id="nav">
-  <div class="container">
-   <a href="#beranda" class="brand" aria-label="SMP Al Falah Rumbia — beranda">
-    <span class="brand-mark"><img src="img/Logo.png" alt="Logo SMP Al Falah Rumbia" width="46" height="46"></span>
-    <span class="brand-text"><strong>SMP Al Falah</strong><span>Rumbia · Lampung Tengah</span></span>
-   </a>
-   <button class="burger" id="burger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="menu">
-    <span></span><span></span><span></span>
-   </button>
-   <nav class="menu" id="menu" aria-label="Navigasi utama">
-    <a href="#beranda" class="active">Beranda</a>
-    <a href="#profil">Profil</a>
-    <a href="#program">Program</a>
-    <a href="#berita">Kegiatan</a>
-    <a href="#fasilitas">Fasilitas</a>
-    <a href="#ppdb">PPDB</a>
-    <a href="#kontak">Kontak</a>
-    <a href="#ppdb" class="btn btn-green">Daftar Sekarang</a>
-   </nav>
-  </div>
- </header>
-
- <main id="konten">
-
-  <!-- HERO -->
-  <section class="hero" id="beranda" style="padding:0">
-   <div class="container">
-    <div>
-     <span class="eyebrow"><i></i>Penerimaan Peserta Didik Baru 2026/2027 dibuka</span>
-     <h1>Mencetak generasi <em>cerdas</em>, berkarakter, dan berprestasi.</h1>
-     <p class="lead">SMP Al Falah Rumbia memadukan kurikulum nasional yang kuat dengan pembinaan akhlak dan nilai-nilai
-      keislaman, di lingkungan belajar yang aman dan penuh keteladanan.</p>
-     <div class="hero-cta">
-      <a href="#ppdb" class="btn btn-green">Daftar PPDB <svg>
-        <use href="#i-arrow" />
-       </svg></a>
-      <a href="#profil" class="btn btn-ghost">Kenali Sekolah Kami</a>
-     </div>
-    </div>
-    <div class="hero-visual">
-     <!-- GANTI: foto utama sekolah →  style="--img:url('assets/hero.jpg')" -->
-     <div class="photo" role="img" aria-label="Foto kegiatan siswa SMP Al Falah"><svg>
-       <use href="#i-img" />
-      </svg></div>
-     <div class="float-card fc-1">
-      <span class="ic"><svg>
-        <use href="#i-shield" />
-       </svg></span>
-      <div><b>Terakreditasi</b><small>Mutu pendidikan terjamin</small></div>
-     </div>
-     <div class="float-card fc-2">
-      <span class="ic"><svg>
-        <use href="#i-star" />
-       </svg></span>
-      <div><b>Berprestasi</b><small>Akademik &amp; non-akademik</small></div>
-     </div>
-    </div>
-   </div>
-   <div class="hero-wave" aria-hidden="true">
-    <svg viewBox="0 0 1440 70" preserveAspectRatio="none">
-     <path d="M0 70V40C240 0 480 0 720 25s480 35 720 5v40z" fill="#fff" />
-    </svg>
-   </div>
-  </section>
-
-  <!-- STATISTIK (GANTI angka sesuai data sekolah) -->
-  <div class="stats">
-   <div class="container">
-    <div class="stats-grid reveal">
-     <div class="stat"><b data-count="450" data-suffix="+">0</b><span>Peserta Didik</span></div>
-     <div class="stat"><b data-count="32" data-suffix="">0</b><span>Guru &amp; Tenaga Pendidik</span></div>
-     <div class="stat"><b data-count="15" data-suffix="">0</b><span>Ruang Kelas &amp; Laboratorium</span></div>
-     <div class="stat"><b data-count="12" data-suffix="+">0</b><span>Ekstrakurikuler</span></div>
-    </div>
-   </div>
-  </div>
-
-  <!-- PROFIL / SAMBUTAN -->
-  <section id="profil">
-   <div class="container about">
-    <div class="about-photo reveal">
-     <!-- GANTI: foto kepala sekolah -->
-     <div class="photo" role="img" aria-label="Kepala Sekolah"><svg>
-       <use href="#i-users" />
-      </svg></div>
-     <div class="caption"><b>Nama Kepala Sekolah, S.Pd.</b><small>Kepala SMP Al Falah Rumbia</small></div>
-    </div>
-    <div class="reveal d1">
-     <span class="tag">Sambutan Kepala Sekolah</span>
-     <h2>Pendidikan yang menumbuhkan ilmu, adab, dan kepercayaan diri.</h2>
-     <p>Assalamu'alaikum warahmatullahi wabarakatuh. Selamat datang di website resmi SMP Al Falah Rumbia. Kami percaya
-      setiap anak memiliki potensi besar yang perlu dibimbing dengan ilmu pengetahuan, keteladanan, dan kasih sayang.
-     </p>
-     <p>Bersama guru yang kompeten dan dukungan orang tua, kami berkomitmen menghadirkan pembelajaran yang bermakna agar
-      lulusan kami siap melanjutkan ke jenjang berikutnya dengan akhlak mulia dan bekal kompetensi yang kuat.</p>
-     <blockquote>“Ilmu tanpa adab akan kehilangan arah; adab tanpa ilmu akan kehilangan daya.”</blockquote>
-     <ul class="checks">
-      <li><svg>
-        <use href="#i-check" />
-       </svg>Kurikulum nasional &amp; pembinaan karakter</li>
-      <li><svg>
-        <use href="#i-check" />
-       </svg>Guru berpengalaman dan peduli</li>
-      <li><svg>
-        <use href="#i-check" />
-       </svg>Lingkungan aman, nyaman, kondusif</li>
-      <li><svg>
-        <use href="#i-check" />
-       </svg>Kegiatan keagamaan terjadwal</li>
-     </ul>
-    </div>
-   </div>
-  </section>
-
-  <!-- VISI MISI -->
-  <section class="bg-soft" id="visi">
-   <div class="container">
-    <div class="sec-head reveal">
-     <span class="tag">Visi &amp; Misi</span>
-     <h2>Arah dan komitmen kami</h2>
-     <p>Landasan yang memandu seluruh proses pendidikan di SMP Al Falah Rumbia.</p>
-    </div>
-    <div class="vm-grid">
-     <div class="vm-card visi reveal">
-      <h3><span class="ic"><svg>
-         <use href="#i-star" />
-        </svg></span>Visi</h3>
-      <!-- GANTI: visi resmi sekolah -->
-      <p>Terwujudnya peserta didik yang beriman, berilmu, berakhlak mulia, mandiri, dan berprestasi serta berwawasan
-       global.</p>
-     </div>
-     <div class="vm-card misi reveal d1">
-      <h3><span class="ic"><svg>
-         <use href="#i-cap" />
-        </svg></span>Misi</h3>
-      <!-- GANTI: misi resmi sekolah -->
-      <ol>
-       <li>Menyelenggarakan pembelajaran aktif, kreatif, dan menyenangkan sesuai kurikulum nasional.</li>
-       <li>Menanamkan nilai keimanan, ketakwaan, dan akhlak mulia dalam keseharian.</li>
-       <li>Mengembangkan bakat dan minat melalui kegiatan ekstrakurikuler.</li>
-       <li>Membangun budaya disiplin, tanggung jawab, dan semangat berprestasi.</li>
-       <li>Menjalin kemitraan yang erat dengan orang tua dan masyarakat.</li>
-      </ol>
-     </div>
-    </div>
-   </div>
-  </section>
-
-  <!-- PROGRAM UNGGULAN -->
-  <section id="program">
-   <div class="container">
-    <div class="sec-head reveal">
-     <span class="tag">Program Unggulan</span>
-     <h2>Bekal lengkap untuk tumbuh dan berprestasi</h2>
-     <p>Perpaduan akademik, karakter, dan keterampilan abad ke-21 dalam satu ekosistem belajar.</p>
-    </div>
-    <div class="cards-3">
-     <article class="feature reveal">
-      <div class="ic"><svg>
-        <use href="#i-book" />
-       </svg></div>
-      <h3>Akademik Unggul</h3>
-      <p>Pembelajaran terstruktur, remedial &amp; pengayaan, serta pendampingan persiapan olimpiade dan ujian.</p>
-     </article>
-     <article class="feature reveal d1">
-      <div class="ic"><svg>
-        <use href="#i-heart" />
-       </svg></div>
-      <h3>Pembinaan Karakter &amp; Keagamaan</h3>
-      <p>Pembiasaan ibadah, tahfidz, kajian, dan keteladanan untuk membentuk akhlak yang baik.</p>
-     </article>
-     <article class="feature reveal d2">
-      <div class="ic"><svg>
-        <use href="#i-cpu" />
-       </svg></div>
-      <h3>Literasi Digital</h3>
-      <p>Pengenalan teknologi, komputer, dan pemanfaatan internet secara sehat dan produktif.</p>
-     </article>
-     <article class="feature reveal">
-      <div class="ic"><svg>
-        <use href="#i-globe" />
-       </svg></div>
-      <h3>Bahasa Asing</h3>
-      <p>Penguatan bahasa Inggris dan Arab melalui praktik percakapan dan kegiatan kebahasaan.</p>
-     </article>
-     <article class="feature reveal d1">
-      <div class="ic"><svg>
-        <use href="#i-flask" />
-       </svg></div>
-      <h3>Sains &amp; Praktikum</h3>
-      <p>Belajar sains lewat eksperimen dan proyek agar siswa berpikir kritis dan ilmiah.</p>
-     </article>
-     <article class="feature reveal d2">
-      <div class="ic"><svg>
-        <use href="#i-users" />
-       </svg></div>
-      <h3>Kepemimpinan Siswa</h3>
-      <p>OSIS, pramuka, dan kegiatan organisasi untuk melatih kemandirian dan tanggung jawab.</p>
-     </article>
-    </div>
-   </div>
-  </section>
-
-  <!-- JENJANG KELAS -->
-  <section class="bg-soft">
-   <div class="container">
-    <div class="sec-head reveal">
-     <span class="tag">Jenjang Belajar</span>
-     <h2>Perjalanan tiga tahun di SMP</h2>
-     <p>Setiap tingkat dirancang untuk membangun fondasi, memperdalam, lalu mematangkan kesiapan siswa.</p>
-    </div>
-    <div class="grades">
-     <div class="grade reveal">
-      <div class="n">VII</div>
-      <h3>Adaptasi &amp; Fondasi</h3>
-      <ul>
-       <li>Pengenalan budaya sekolah</li>
-       <li>Penguatan literasi &amp; numerasi</li>
-       <li>Pembiasaan ibadah harian</li>
-      </ul>
-     </div>
-     <div class="grade reveal d1">
-      <div class="n">VIII</div>
-      <h3>Pendalaman &amp; Minat</h3>
-      <ul>
-       <li>Pendalaman mata pelajaran inti</li>
-       <li>Pengembangan bakat ekstrakurikuler</li>
-       <li>Proyek penguatan profil pelajar</li>
-      </ul>
-     </div>
-     <div class="grade reveal d2">
-      <div class="n">IX</div>
-      <h3>Pemantapan &amp; Kesiapan</h3>
-      <ul>
-       <li>Pendampingan ujian akhir</li>
-       <li>Bimbingan melanjutkan sekolah</li>
-       <li>Kepemimpinan &amp; kemandirian</li>
-      </ul>
-     </div>
-    </div>
-   </div>
-  </section>
-
-  <!-- EKSTRAKURIKULER -->
-  <section>
-   <div class="container">
-    <div class="sec-head reveal">
-     <span class="tag">Ekstrakurikuler</span>
-     <h2>Temukan dan kembangkan bakatmu</h2>
-     <p>Beragam pilihan kegiatan untuk menyalurkan minat dan membangun prestasi di luar kelas.</p>
-    </div>
-    <div class="chips reveal">
-     <span class="chip"><svg>
-       <use href="#i-tent" />
-      </svg>Pramuka</span>
-     <span class="chip"><svg>
-       <use href="#i-ball" />
-      </svg>Futsal</span>
-     <span class="chip"><svg>
-       <use href="#i-ball" />
-      </svg>Voli</span>
-     <span class="chip"><svg>
-       <use href="#i-mic" />
-      </svg>Pidato &amp; Khitobah</span>
-     <span class="chip"><svg>
-       <use href="#i-music" />
-      </svg>Hadroh &amp; Seni Islami</span>
-     <span class="chip"><svg>
-       <use href="#i-book" />
-      </svg>Tahfidz Al-Qur'an</span>
-     <span class="chip"><svg>
-       <use href="#i-cpu" />
-      </svg>Komputer</span>
-     <span class="chip"><svg>
-       <use href="#i-flask" />
-      </svg>Karya Ilmiah</span>
-     <span class="chip"><svg>
-       <use href="#i-globe" />
-      </svg>English Club</span>
-     <span class="chip"><svg>
-       <use href="#i-users" />
-      </svg>OSIS</span>
-    </div>
-   </div>
-  </section>
-
-  <!-- BERITA / KEGIATAN -->
-  <section class="bg-soft" id="berita">
-   <div class="container">
-    <div class="sec-head reveal">
-     <span class="tag">Kegiatan &amp; Informasi</span>
-     <h2>Kabar terbaru dari sekolah</h2>
-     <p>Ikuti berbagai kegiatan, pengumuman, dan capaian siswa SMP Al Falah Rumbia.</p>
-    </div>
-    <!-- Kartu di bawah ini = cadangan. Jika feed Instagram diisi (lihat IG_FEED_URL di bagian script), kartu akan diganti otomatis dengan postingan terbaru. -->
-    <div class="news-grid" id="igFeed" aria-live="polite">
-     <!-- GANTI: konten & foto berita -->
-     <article class="news reveal">
-      <div class="photo" role="img" aria-label="Foto kegiatan"><svg>
-        <use href="#i-img" />
-       </svg></div>
-      <div class="news-body">
-       <div class="news-meta"><span class="cat">Pengumuman</span><span>12 November 2026</span></div>
-       <h3>Pendaftaran Peserta Didik Baru Tahun Ajaran 2026/2027 Resmi Dibuka</h3>
-       <p>Pendaftaran dibuka untuk calon siswa baru. Kuota terbatas, segera lengkapi berkas pendaftaran Anda.</p>
-       <a class="more" href="#ppdb">Selengkapnya <svg>
-         <use href="#i-arrow" />
-        </svg></a>
-      </div>
-     </article>
-     <article class="news reveal d1">
-      <div class="photo" role="img" aria-label="Foto kegiatan"><svg>
-        <use href="#i-img" />
-       </svg></div>
-      <div class="news-body">
-       <div class="news-meta"><span class="cat">Prestasi</span><span>3 November 2026</span></div>
-       <h3>Siswa Meraih Juara dalam Lomba Pidato Tingkat Kabupaten</h3>
-       <p>Prestasi membanggakan kembali diraih siswa kami berkat pembinaan rutin dan dedikasi para pembimbing.</p>
-       <a class="more" href="#berita">Selengkapnya <svg>
-         <use href="#i-arrow" />
-        </svg></a>
-      </div>
-     </article>
-     <article class="news reveal d2">
-      <div class="photo" role="img" aria-label="Foto kegiatan"><svg>
-        <use href="#i-img" />
-       </svg></div>
-      <div class="news-body">
-       <div class="news-meta"><span class="cat">Kegiatan</span><span>25 Oktober 2026</span></div>
-       <h3>Peringatan Hari Santri: Upacara, Lomba, dan Kegiatan Keagamaan</h3>
-       <p>Seluruh warga sekolah memeriahkan Hari Santri dengan beragam kegiatan yang penuh makna.</p>
-       <a class="more" href="#berita">Selengkapnya <svg>
-         <use href="#i-arrow" />
-        </svg></a>
-      </div>
-     </article>
-    </div>
-   </div>
-  </section>
-
-  <!-- FASILITAS -->
-  <section id="fasilitas">
-   <div class="container">
-    <div class="sec-head reveal">
-     <span class="tag">Fasilitas</span>
-     <h2>Sarana yang mendukung proses belajar</h2>
-     <p>Lingkungan yang bersih, aman, dan nyaman agar siswa dapat belajar dengan optimal.</p>
-    </div>
-    <div class="fas-grid">
-     <!-- GANTI: tambahkan foto → style="--img:url('assets/fasilitas/kelas.jpg')" -->
-     <div class="fas photo reveal"><svg>
-       <use href="#i-img" />
-      </svg><span>Ruang Kelas<small>Nyaman &amp; berventilasi baik</small></span></div>
-     <div class="fas photo reveal d1"><svg>
-       <use href="#i-img" />
-      </svg><span>Laboratorium<small>IPA &amp; komputer</small></span></div>
-     <div class="fas photo reveal d2"><svg>
-       <use href="#i-img" />
-      </svg><span>Perpustakaan<small>Koleksi buku &amp; ruang baca</small></span></div>
-     <div class="fas photo reveal d3"><svg>
-       <use href="#i-img" />
-      </svg><span>Masjid<small>Pusat ibadah &amp; pembinaan</small></span></div>
-     <div class="fas photo reveal"><svg>
-       <use href="#i-img" />
-      </svg><span>Lapangan Olahraga<small>Futsal, voli, dan upacara</small></span></div>
-     <div class="fas photo reveal d1"><svg>
-       <use href="#i-img" />
-      </svg><span>Aula Serbaguna<small>Kegiatan &amp; pertemuan</small></span></div>
-     <div class="fas photo reveal d2"><svg>
-       <use href="#i-img" />
-      </svg><span>Kantin Sehat<small>Makanan bersih &amp; bergizi</small></span></div>
-     <div class="fas photo reveal d3"><svg>
-       <use href="#i-img" />
-      </svg><span>Asrama<small>Pembinaan 24 jam</small></span></div>
-    </div>
-   </div>
-  </section>
-
-  <!-- GALERI -->
-  <section class="bg-soft" id="galeri">
-   <div class="container">
-    <div class="sec-head reveal">
-     <span class="tag">Galeri</span>
-     <h2>Momen kebersamaan kami</h2>
-    </div>
-    <div class="gallery reveal">
-     <div class="photo w2 h2"><svg>
-       <use href="#i-img" />
-      </svg></div>
-     <div class="photo"><svg>
-       <use href="#i-img" />
-      </svg></div>
-     <div class="photo"><svg>
-       <use href="#i-img" />
-      </svg></div>
-     <div class="photo w2"><svg>
-       <use href="#i-img" />
-      </svg></div>
-     <div class="photo"><svg>
-       <use href="#i-img" />
-      </svg></div>
-     <div class="photo"><svg>
-       <use href="#i-img" />
-      </svg></div>
-    </div>
-   </div>
-  </section>
-
-  <!-- PPDB -->
-  <section class="ppdb" id="ppdb">
-   <div class="container">
-    <div class="sec-head reveal">
-     <span class="tag">PPDB 2026/2027</span>
-     <h2>Bergabunglah bersama kami</h2>
-     <p>Proses pendaftaran dibuat sederhana, transparan, dan bisa dilakukan dari rumah.</p>
-    </div>
-    <div class="steps">
-     <div class="step reveal">
-      <h3>Isi Formulir</h3>
-      <p>Lengkapi data calon siswa melalui formulir pendaftaran online atau datang langsung.</p>
-     </div>
-     <div class="step reveal d1">
-      <h3>Unggah Berkas</h3>
-      <p>Siapkan dan kirim dokumen persyaratan yang diminta panitia.</p>
-     </div>
-     <div class="step reveal d2">
-      <h3>Seleksi &amp; Verifikasi</h3>
-      <p>Panitia memverifikasi berkas dan melaksanakan tes/wawancara sederhana.</p>
-     </div>
-     <div class="step reveal d3">
-      <h3>Daftar Ulang</h3>
-      <p>Peserta yang diterima melakukan daftar ulang dan administrasi.</p>
-     </div>
-    </div>
-    <div class="ppdb-box">
-     <div class="req reveal">
-      <!-- GANTI: persyaratan resmi -->
-      <h3>Persyaratan Pendaftaran</h3>
-      <ul>
-       <li><svg>
-         <use href="#i-check" />
-        </svg>Fotokopi ijazah / surat keterangan lulus SD/MI</li>
-       <li><svg>
-         <use href="#i-check" />
-        </svg>Fotokopi Kartu Keluarga &amp; akta kelahiran</li>
-       <li><svg>
-         <use href="#i-check" />
-        </svg>Pas foto terbaru ukuran 3×4 (2 lembar)</li>
-       <li><svg>
-         <use href="#i-check" />
-        </svg>Fotokopi KIP/PKH (jika ada)</li>
-       <li><svg>
-         <use href="#i-check" />
-        </svg>Mengisi formulir dan surat pernyataan orang tua</li>
-      </ul>
-     </div>
-     <div class="cta-card reveal d1">
-      <h3>Siap mendaftar?</h3>
-      <p>Hubungi panitia PPDB untuk informasi biaya, jadwal, dan bantuan pendaftaran.</p>
-      <!-- GANTI: tautan formulir pendaftaran -->
-      <a href="#" class="btn btn-green">Formulir Online <svg>
-        <use href="#i-arrow" />
-       </svg></a>
-      <a
-       href="https://wa.me/6285832155052?text=Assalamu'alaikum%2C%20saya%20ingin%20bertanya%20tentang%20PPDB%20SMP%20Al%20Falah%20Rumbia"
-       target="_blank" rel="noopener" class="btn btn-white">Tanya via WhatsApp</a>
-     </div>
-    </div>
-   </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq">
-   <div class="container">
-    <div class="sec-head reveal">
-     <span class="tag">FAQ</span>
-     <h2>Pertanyaan yang sering diajukan</h2>
-    </div>
-    <div class="faq reveal">
-     <details open>
-      <summary>Kapan pendaftaran peserta didik baru dibuka?</summary>
-      <p>Pendaftaran dibuka sesuai jadwal PPDB yang diumumkan di website dan media sosial sekolah. Silakan hubungi
-       panitia untuk jadwal terbaru.</p>
-     </details>
-     <details>
-      <summary>Apakah SMP Al Falah menyediakan asrama?</summary>
-      <p>Ya, tersedia asrama bagi siswa yang ingin mengikuti pembinaan intensif. Pendaftaran asrama dapat dipilih saat
-       mengisi formulir.</p>
-     </details>
-     <details>
-      <summary>Berapa biaya pendidikan?</summary>
-      <p>Rincian biaya pendaftaran, bulanan, serta kebutuhan seragam disampaikan oleh panitia PPDB. Hubungi kami melalui
-       WhatsApp untuk informasi lengkap.</p>
-     </details>
-     <details>
-      <summary>Kurikulum apa yang digunakan?</summary>
-      <p>Kami menerapkan kurikulum nasional yang diperkuat dengan pembinaan karakter dan kegiatan keagamaan.</p>
-     </details>
-     <details>
-      <summary>Apakah ada keringanan bagi siswa kurang mampu?</summary>
-      <p>Tersedia kebijakan keringanan bagi calon siswa yang memenuhi ketentuan. Silakan konsultasikan langsung dengan
-       panitia.</p>
-     </details>
-    </div>
-   </div>
-  </section>
-
-  <!-- KONTAK -->
-  <section class="bg-soft" id="kontak">
-   <div class="container">
-    <div class="sec-head reveal">
-     <span class="tag">Kontak</span>
-     <h2>Hubungi &amp; kunjungi kami</h2>
-     <p>Kami dengan senang hati menyambut pertanyaan dan kunjungan Bapak/Ibu.</p>
-    </div>
-    <div class="contact">
-     <div class="contact-info reveal">
-      <!-- GANTI: alamat, email, dan jam resmi -->
-      <div class="ci"><span class="ic"><svg>
-         <use href="#i-pin" />
-        </svg></span>
-       <div><b>Alamat</b><span>Kecamatan Rumbia, Kabupaten Lampung Tengah, Lampung</span></div>
-      </div>
-      <div class="ci"><span class="ic"><svg>
-         <use href="#i-phone" />
-        </svg></span>
-       <div><b>Telepon / WhatsApp</b><span><a href="https://wa.me/6285832155052" target="_blank" rel="noopener">+62
-          858-3215-5052</a></span></div>
-      </div>
-      <div class="ci"><span class="ic"><svg>
-         <use href="#i-mail" />
-        </svg></span>
-       <div><b>Email</b><span>info@smpalfalahrumbia.sch.id</span></div>
-      </div>
-      <div class="ci"><span class="ic"><svg>
-         <use href="#i-clock" />
-        </svg></span>
-       <div><b>Jam Layanan</b><span>Senin – Sabtu, 07.00 – 15.00 WIB</span></div>
-      </div>
-     </div>
-     <div class="map reveal d1">
-      <iframe title="Lokasi sekolah di Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-       allowfullscreen
-       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26962.304789369293!2d105.47711005!3d-4.76855775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3f679c215375ef%3A0x4fa30cea83f0f9ee!2sPondok%20Pesantren%20Al-Falah%20Rumbia!5e1!3m2!1sid!2sid!4v1779622962759!5m2!1sid!2sid"></iframe>
-     </div>
-    </div>
-   </div>
-  </section>
- </main>
-
- <!-- FOOTER -->
- <footer>
-  <div class="container">
-   <div class="foot-grid">
-    <div>
-     <div class="brand">
-      <span class="brand-mark brand-mark-foot"><img src="img/Logo.png" alt="Logo SMP Al Falah Rumbia" width="46"
-        height="46" loading="lazy"></span>
-      <span class="brand-text"><strong>SMP Al Falah</strong><span>Rumbia · Lampung Tengah</span></span>
-     </div>
-     <p>Mencetak generasi cerdas, berkarakter, dan berprestasi dengan landasan ilmu dan akhlak mulia.</p>
-    </div>
-    <div>
-     <h4>Menu</h4>
-     <ul>
-      <li><a href="#beranda">Beranda</a></li>
-      <li><a href="#profil">Profil</a></li>
-      <li><a href="#program">Program</a></li>
-      <li><a href="#berita">Kegiatan</a></li>
-     </ul>
-    </div>
-    <div>
-     <h4>Informasi</h4>
-     <ul>
-      <li><a href="#fasilitas">Fasilitas</a></li>
-      <li><a href="#ppdb">PPDB</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#kontak">Kontak</a></li>
-     </ul>
-    </div>
-    <div>
-     <h4>Hubungi Kami</h4>
-     <ul>
-      <li>Rumbia, Lampung Tengah</li>
-      <li><a href="https://wa.me/6285832155052" target="_blank" rel="noopener">+62 858-3215-5052</a></li>
-      <li>info@smpalfalahrumbia.sch.id</li>
-     </ul>
-    </div>
-   </div>
-   <div class="foot-bottom">© <span id="year">2026</span> SMP Al Falah Rumbia. Hak cipta dilindungi.</div>
-  </div>
- </footer>
-
- <a class="wa-float" href="https://wa.me/6285832155052" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-   <path
-    d="M17.500 14.400c-.3-.1-1.700-.8-2-.9-.3-.1-.5-.1-.7.100-.2.300-.8.900-.9 1.100-.2.200-.3.200-.6.100-.3-.1-1.200-.4-2.300-1.400-.8-.8-1.400-1.700-1.600-2-.2-.3 0-.4.100-.6l.4-.5c.1-.2.200-.3.300-.5.100-.2 0-.4 0-.5-.1-.1-.7-1.600-.9-2.200-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400-.3.300-1 1-1 2.500s1.100 2.900 1.200 3.100c.1.200 2.100 3.200 5.100 4.500 2.500 1 3 .8 3.500.8.500-.1 1.700-.7 1.900-1.400.2-.7.200-1.300.2-1.400-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm0 18.200c-1.500 0-3-.4-4.200-1.200l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200z" />
+  <!-- ICON SPRITE -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+        <circle cx="12" cy="10" r="3" />
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <rect x="2" y="4" width="20" height="16" rx="2" />
+        <path d="m22 7-10 6L2 7" />
+      </symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 6v6l4 2" />
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M13 6l6 6-6 6" />
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+        stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <path d="m8 12 3 3 5-6" />
+      </symbol>
+      <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z" />
+        <path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5" />
+      </symbol>
+      <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z" />
+      </symbol>
+      <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+      </symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="m22 10-10-5L2 10l10 5z" />
+        <path d="M6 12v5c3 2 9 2 12 0v-5" />
+        <path d="M22 10v6" />
+      </symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path
+          d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z" />
+      </symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z" />
+      </symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <rect x="4" y="4" width="16" height="16" rx="2" />
+        <rect x="9" y="9" width="6" height="6" />
+        <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3" />
+      </symbol>
+      <symbol id="i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M9 3h6M10 3v6L4.5 19a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 9V3" />
+        <path d="M7 15h10" />
+      </symbol>
+      <symbol id="i-img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+        stroke-linejoin="round">
+        <rect x="3" y="3" width="18" height="18" rx="3" />
+        <circle cx="8.5" cy="8.5" r="1.6" />
+        <path d="m21 15-5-5L5 21" />
+      </symbol>
+      <symbol id="i-ball" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 2v20M2 12h20M4.9 4.9c3 3 3 11.2 0 14.2M19.1 4.9c-3 3-3 11.2 0 14.2" />
+      </symbol>
+      <symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <rect x="9" y="2" width="6" height="12" rx="3" />
+        <path d="M19 10v1a7 7 0 0 1-14 0v-1M12 18v4M8 22h8" />
+      </symbol>
+      <symbol id="i-music" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M9 18V5l12-2v13" />
+        <circle cx="6" cy="18" r="3" />
+        <circle cx="18" cy="16" r="3" />
+      </symbol>
+      <symbol id="i-tent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M3 21 12 4l9 17zM12 4v17M8 21l4-7 4 7" />
+      </symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        <path d="m9 12 2 2 4-4" />
+      </symbol>
+      <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+      </symbol>
+      <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" />
+        <path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4zM17.5 6.5h.01" />
+      </symbol>
+      <symbol id="i-yt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path
+          d="M22.5 6.4a2.8 2.8 0 0 0-2-2C18.9 4 12 4 12 4s-6.900 0-8.500.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 1 12a29 29 0 0 0 .5 5.600 2.8 2.8 0 0 0 2 2C5.100 20 12 20 12 20s6.900 0 8.500-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 23 12a29 29 0 0 0-.5-5.600z" />
+        <path d="m9.750 15 5.750-3-5.750-3z" />
+      </symbol>
+    </defs>
   </svg>
- </a>
- <button class="to-top" id="toTop" aria-label="Kembali ke atas"><svg viewBox="0 0 24 24" fill="none"
-   stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
-   <path d="m18 15-6-6-6 6" />
-  </svg></button>
 
- <script>
-  (function () {
-   var nav = document.getElementById('nav');
-   var burger = document.getElementById('burger');
-   var menu = document.getElementById('menu');
-   var toTop = document.getElementById('toTop');
-   var links = Array.prototype.slice.call(menu.querySelectorAll('a[href^="#"]:not(.btn)'));
-   document.getElementById('year').textContent = new Date().getFullYear();
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <div class="container">
+      <a href="#beranda" class="brand" aria-label="SMP Al Falah Rumbia — beranda">
+        <span class="brand-mark"><img src="img/Logo.png" alt="Logo SMP Al Falah Rumbia" width="46" height="46"></span>
+        <span class="brand-text"><strong>SMP Al Falah</strong><span>Rumbia · Lampung Tengah</span></span>
+      </a>
+      <button class="burger" id="burger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu" id="menu" aria-label="Navigasi utama">
+        <a href="#beranda" class="active">Beranda</a>
+        <a href="#profil">Profil</a>
+        <a href="#program">Program</a>
+        <a href="#berita">Kegiatan</a>
+        <a href="#fasilitas">Fasilitas</a>
+        <a href="#ppdb">PPDB</a>
+        <a href="#kontak">Kontak</a>
+        <a href="#ppdb" class="btn btn-green">Daftar Sekarang</a>
+      </nav>
+    </div>
+  </header>
 
-   /* Menu mobile */
-   function setMenu(open) {
-    menu.classList.toggle('open', open);
-    burger.setAttribute('aria-expanded', open);
-    burger.setAttribute('aria-label', open ? 'Tutup menu navigasi' : 'Buka menu navigasi');
-    document.body.style.overflow = open ? 'hidden' : '';
-   }
-   window.addEventListener('resize', function () { if (window.innerWidth > 1060) setMenu(false); });
-   document.addEventListener('click', function (e) {
-    if (menu.classList.contains('open') && !e.target.closest('#nav')) setMenu(false);
-   });
-   burger.addEventListener('click', function () { setMenu(!menu.classList.contains('open')); });
-   menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
-   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+  <main id="konten">
 
-   /* Navbar & tombol ke atas */
-   function onScroll() {
-    nav.classList.toggle('scrolled', window.scrollY > 10);
-    toTop.classList.toggle('show', window.scrollY > 600);
-   }
-   window.addEventListener('scroll', onScroll, { passive: true });
-   onScroll();
-   toTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    <!-- HERO -->
+    <section class="hero" id="beranda" style="padding:0">
+      <div class="container">
+        <div>
+          <h1>Mencetak generasi <em>cerdas</em>, berkarakter, dan berprestasi.</h1>
+          <p class="lead">SMP Al Falah Rumbia memadukan kurikulum nasional yang kuat dengan pembinaan akhlak dan
+            nilai-nilai
+            keislaman, di lingkungan belajar yang aman dan penuh keteladanan.</p>
+          <div class="hero-cta">
+            <a href="#ppdb" class="btn btn-green">Daftar Sekarang <svg>
+                <use href="#i-arrow" />
+              </svg></a>
+            <a href="#profil" class="btn btn-ghost">Kenali Sekolah Kami</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <!-- GANTI: foto utama sekolah →  style="--img:url('assets/hero.jpg')" -->
+          <div class="photo" role="img" aria-label="Foto kegiatan siswa SMP Al Falah"><svg>
+              <use href="#i-img" />
+            </svg></div>
+          <div class="float-card fc-1">
+            <span class="ic"><svg>
+                <use href="#i-shield" />
+              </svg></span>
+            <div><b>Terakreditasi</b><small>Mutu pendidikan terjamin</small></div>
+          </div>
+          <div class="float-card fc-2">
+            <span class="ic"><svg>
+                <use href="#i-star" />
+              </svg></span>
+            <div><b>Berprestasi</b><small>Akademik &amp; non-akademik</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 70" preserveAspectRatio="none">
+          <path d="M0 70V40C240 0 480 0 720 25s480 35 720 5v40z" fill="#fff" />
+        </svg>
+      </div>
+    </section>
 
-   /* Menu aktif sesuai section */
-   var secs = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
-   if ('IntersectionObserver' in window) {
-    var spy = new IntersectionObserver(function (entries) {
-     entries.forEach(function (en) {
-      if (en.isIntersecting) {
-       var id = '#' + en.target.id;
-       links.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === id); });
+    <!-- STATISTIK (GANTI angka sesuai data sekolah) -->
+    <div class="stats">
+      <div class="container">
+        <div class="stats-grid reveal">
+          <div class="stat"><b data-count="450" data-suffix="+">0</b><span><em class="full">Peserta Didik</em><em
+                class="short">Siswa</em></span></div>
+          <div class="stat"><b data-count="32" data-suffix="">0</b><span><em class="full">Guru &amp; Tenaga
+                Pendidik</em><em class="short">Guru &amp; Staf</em></span></div>
+          <div class="stat"><b data-count="15" data-suffix="">0</b><span><em class="full">Ruang Kelas &amp;
+                Laboratorium</em><em class="short">Kelas &amp; Lab</em></span></div>
+          <div class="stat"><b data-count="12" data-suffix="+">0</b><span><em class="full">Ekstrakurikuler</em><em
+                class="short">Ekskul</em></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VISI MISI -->
+    <section class="bg-soft" id="profil">
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2>Visi &amp; Misi</h2>
+        </div>
+        <div class="vm-grid">
+          <div class="vm-card visi reveal">
+            <h3>Visi</h3>
+            <!-- GANTI: visi resmi sekolah -->
+            <p>Terwujudnya peserta didik yang beriman, berilmu, berakhlak mulia, mandiri, dan berprestasi serta
+              berwawasan
+              global.</p>
+          </div>
+          <div class="vm-card misi reveal d1">
+            <h3>Misi</h3>
+            <!-- GANTI: misi resmi sekolah -->
+            <ol>
+              <li>Menyelenggarakan pembelajaran aktif, kreatif, dan menyenangkan sesuai kurikulum nasional.</li>
+              <li>Menanamkan nilai keimanan, ketakwaan, dan akhlak mulia dalam keseharian.</li>
+              <li>Mengembangkan bakat dan minat melalui kegiatan ekstrakurikuler.</li>
+              <li>Membangun budaya disiplin, tanggung jawab, dan semangat berprestasi.</li>
+              <li>Menjalin kemitraan yang erat dengan orang tua dan masyarakat.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM UNGGULAN -->
+    <section id="program">
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2>Program Unggulan</h2>
+        </div>
+        <div class="cards-3 cards-4">
+          <article class="feature reveal">
+            <div class="ic"><svg>
+                <use href="#i-book" />
+              </svg></div>
+            <h3>Akademik Unggul</h3>
+            <p>Pembelajaran terstruktur, remedial &amp; pengayaan, serta pendampingan persiapan olimpiade dan ujian.</p>
+          </article>
+          <article class="feature reveal d1">
+            <div class="ic"><svg>
+                <use href="#i-heart" />
+              </svg></div>
+            <h3>Pembinaan Karakter &amp; Keagamaan</h3>
+            <p>Pembiasaan ibadah, tahfidz, kajian, dan keteladanan untuk membentuk akhlak yang baik.</p>
+          </article>
+          <article class="feature reveal d2">
+            <div class="ic"><svg>
+                <use href="#i-cpu" />
+              </svg></div>
+            <h3>Literasi Digital</h3>
+            <p>Pengenalan teknologi, komputer, dan pemanfaatan internet secara sehat dan produktif.</p>
+          </article>
+          <article class="feature reveal d3">
+            <div class="ic"><svg>
+                <use href="#i-users" />
+              </svg></div>
+            <h3>Kepemimpinan Siswa</h3>
+            <p>IPNU–IPPNU, pramuka, dan kegiatan organisasi untuk melatih kemandirian dan tanggung jawab.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EKSTRAKURIKULER -->
+    <section>
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2>Ekstrakurikuler</h2>
+        </div>
+        <div class="chips reveal">
+          <span class="chip"><svg>
+              <use href="#i-tent" />
+            </svg>Pramuka</span>
+          <span class="chip"><svg>
+              <use href="#i-ball" />
+            </svg>Futsal</span>
+          <span class="chip"><svg>
+              <use href="#i-ball" />
+            </svg>Voli</span>
+          <span class="chip"><svg>
+              <use href="#i-mic" />
+            </svg>Pidato &amp; Khitobah</span>
+          <span class="chip"><svg>
+              <use href="#i-music" />
+            </svg>Hadroh &amp; Seni Islami</span>
+          <span class="chip"><svg>
+              <use href="#i-book" />
+            </svg>Tahfidz Al-Qur'an</span>
+          <span class="chip"><svg>
+              <use href="#i-cpu" />
+            </svg>Komputer</span>
+          <span class="chip"><svg>
+              <use href="#i-users" />
+            </svg>IPNU–IPPNU</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BERITA / KEGIATAN -->
+    <section class="bg-soft" id="berita">
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2>Kegiatan &amp; Informasi</h2>
+        </div>
+        <!-- Kartu di bawah ini = cadangan. Jika feed Instagram diisi (lihat IG_FEED_URL di bagian script), kartu akan diganti otomatis dengan postingan terbaru. -->
+        <div class="news-grid" id="igFeed" aria-live="polite">
+          <!-- GANTI: konten & foto berita -->
+          <article class="news reveal">
+            <div class="photo" role="img" aria-label="Foto kegiatan"><svg>
+                <use href="#i-img" />
+              </svg></div>
+            <div class="news-body">
+              <div class="news-meta"><span class="cat">Pengumuman</span><span>12 November 2026</span></div>
+              <h3>Pendaftaran Peserta Didik Baru Tahun Ajaran 2026/2027 Resmi Dibuka</h3>
+              <p>Pendaftaran dibuka untuk calon siswa baru. Kuota terbatas, segera lengkapi berkas pendaftaran Anda.</p>
+              <a class="more" href="#ppdb">Selengkapnya <svg>
+                  <use href="#i-arrow" />
+                </svg></a>
+            </div>
+          </article>
+          <article class="news reveal d1">
+            <div class="photo" role="img" aria-label="Foto kegiatan"><svg>
+                <use href="#i-img" />
+              </svg></div>
+            <div class="news-body">
+              <div class="news-meta"><span class="cat">Prestasi</span><span>3 November 2026</span></div>
+              <h3>Siswa Meraih Juara dalam Lomba Pidato Tingkat Kabupaten</h3>
+              <p>Prestasi membanggakan kembali diraih siswa kami berkat pembinaan rutin dan dedikasi para pembimbing.
+              </p>
+              <a class="more" href="#berita">Selengkapnya <svg>
+                  <use href="#i-arrow" />
+                </svg></a>
+            </div>
+          </article>
+          <article class="news reveal d2">
+            <div class="photo" role="img" aria-label="Foto kegiatan"><svg>
+                <use href="#i-img" />
+              </svg></div>
+            <div class="news-body">
+              <div class="news-meta"><span class="cat">Kegiatan</span><span>25 Oktober 2026</span></div>
+              <h3>Peringatan Hari Santri: Upacara, Lomba, dan Kegiatan Keagamaan</h3>
+              <p>Seluruh warga sekolah memeriahkan Hari Santri dengan beragam kegiatan yang penuh makna.</p>
+              <a class="more" href="#berita">Selengkapnya <svg>
+                  <use href="#i-arrow" />
+                </svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FASILITAS -->
+    <section id="fasilitas">
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2>Fasilitas</h2>
+        </div>
+        <div class="fas-grid">
+          <!-- GANTI: tambahkan foto → style="--img:url('assets/fasilitas/kelas.jpg')" -->
+          <div class="fas photo reveal"><svg>
+              <use href="#i-img" />
+            </svg><span>Ruang Kelas</span></div>
+          <div class="fas photo reveal d1"><svg>
+              <use href="#i-img" />
+            </svg><span>Laboratorium</span></div>
+          <div class="fas photo reveal d2"><svg>
+              <use href="#i-img" />
+            </svg><span>Perpustakaan</span></div>
+          <div class="fas photo reveal d3"><svg>
+              <use href="#i-img" />
+            </svg><span>Masjid</span></div>
+          <div class="fas photo reveal"><svg>
+              <use href="#i-img" />
+            </svg><span>Lapangan Olahraga</span></div>
+          <div class="fas photo reveal d1"><svg>
+              <use href="#i-img" />
+            </svg><span>Aula Serbaguna</span></div>
+          <div class="fas photo reveal d2"><svg>
+              <use href="#i-img" />
+            </svg><span>Kantin Sehat</span></div>
+          <div class="fas photo reveal d3"><svg>
+              <use href="#i-img" />
+            </svg><span>Asrama</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERI -->
+    <section class="bg-soft" id="galeri">
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2>Galeri</h2>
+        </div>
+        <div class="gallery reveal">
+          <div class="photo w2 h2"><svg>
+              <use href="#i-img" />
+            </svg></div>
+          <div class="photo"><svg>
+              <use href="#i-img" />
+            </svg></div>
+          <div class="photo"><svg>
+              <use href="#i-img" />
+            </svg></div>
+          <div class="photo w2"><svg>
+              <use href="#i-img" />
+            </svg></div>
+          <div class="photo"><svg>
+              <use href="#i-img" />
+            </svg></div>
+          <div class="photo"><svg>
+              <use href="#i-img" />
+            </svg></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PPDB -->
+    <section class="ppdb" id="ppdb">
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2>Penerimaan Peserta Didik Baru</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <h3>Isi Formulir</h3>
+            <p>Lengkapi data calon siswa melalui formulir pendaftaran online atau datang langsung.</p>
+          </div>
+          <div class="step reveal d1">
+            <h3>Unggah Berkas</h3>
+            <p>Siapkan dan kirim dokumen persyaratan yang diminta panitia.</p>
+          </div>
+          <div class="step reveal d2">
+            <h3>Seleksi &amp; Verifikasi</h3>
+            <p>Panitia memverifikasi berkas dan melaksanakan tes/wawancara sederhana.</p>
+          </div>
+          <div class="step reveal d3">
+            <h3>Daftar Ulang</h3>
+            <p>Peserta yang diterima melakukan daftar ulang dan administrasi.</p>
+          </div>
+        </div>
+        <div class="ppdb-box">
+          <div class="req reveal">
+            <!-- GANTI: persyaratan resmi -->
+            <h3>Persyaratan Pendaftaran</h3>
+            <ul>
+              <li><svg>
+                  <use href="#i-check" />
+                </svg>Fotokopi ijazah / surat keterangan lulus SD/MI</li>
+              <li><svg>
+                  <use href="#i-check" />
+                </svg>Fotokopi Kartu Keluarga &amp; akta kelahiran</li>
+              <li><svg>
+                  <use href="#i-check" />
+                </svg>Pas foto terbaru ukuran 3×4 (2 lembar)</li>
+              <li><svg>
+                  <use href="#i-check" />
+                </svg>Fotokopi KIP/PKH (jika ada)</li>
+              <li><svg>
+                  <use href="#i-check" />
+                </svg>Mengisi formulir dan surat pernyataan orang tua</li>
+            </ul>
+          </div>
+          <div class="cta-card reveal d1">
+            <h3>Siap mendaftar?</h3>
+            <p>Hubungi panitia PPDB untuk informasi biaya, jadwal, dan bantuan pendaftaran.</p>
+            <!-- GANTI: tautan formulir pendaftaran -->
+            <a href="#" class="btn btn-green">Formulir Online <svg>
+                <use href="#i-arrow" />
+              </svg></a>
+            <a href="https://wa.me/6285832155052?text=Assalamu'alaikum%2C%20saya%20ingin%20bertanya%20tentang%20PPDB%20SMP%20Al%20Falah%20Rumbia"
+              target="_blank" rel="noopener" class="btn btn-white">Tanya via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2>Pertanyaan Umum</h2>
+        </div>
+        <div class="faq reveal">
+          <details open>
+            <summary>Kapan pendaftaran peserta didik baru dibuka?</summary>
+            <p>Pendaftaran dibuka sesuai jadwal PPDB yang diumumkan di website dan media sosial sekolah. Silakan hubungi
+              panitia untuk jadwal terbaru.</p>
+          </details>
+          <details>
+            <summary>Apakah SMP Al Falah menyediakan asrama?</summary>
+            <p>Ya, tersedia asrama bagi siswa yang ingin mengikuti pembinaan intensif. Pendaftaran asrama dapat dipilih
+              saat
+              mengisi formulir.</p>
+          </details>
+          <details>
+            <summary>Berapa biaya pendidikan?</summary>
+            <p>Rincian biaya pendaftaran, bulanan, serta kebutuhan seragam disampaikan oleh panitia PPDB. Hubungi kami
+              melalui
+              WhatsApp untuk informasi lengkap.</p>
+          </details>
+          <details>
+            <summary>Kurikulum apa yang digunakan?</summary>
+            <p>Kami menerapkan kurikulum nasional yang diperkuat dengan pembinaan karakter dan kegiatan keagamaan.</p>
+          </details>
+          <details>
+            <summary>Apakah ada keringanan bagi siswa kurang mampu?</summary>
+            <p>Tersedia kebijakan keringanan bagi calon siswa yang memenuhi ketentuan. Silakan konsultasikan langsung
+              dengan
+              panitia.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="bg-soft" id="kontak">
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2>Kontak</h2>
+        </div>
+        <div class="contact">
+          <div class="contact-info reveal">
+            <!-- GANTI: alamat, email, dan jam resmi -->
+            <div class="ci"><span class="ic"><svg>
+                  <use href="#i-pin" />
+                </svg></span>
+              <div><b>Alamat</b><span>Kecamatan Rumbia, Kabupaten Lampung Tengah, Lampung</span></div>
+            </div>
+            <div class="ci"><span class="ic"><svg>
+                  <use href="#i-phone" />
+                </svg></span>
+              <div><b>Telepon / WhatsApp</b><span><a href="https://wa.me/6285832155052" target="_blank"
+                    rel="noopener">+62
+                    858-3215-5052</a></span></div>
+            </div>
+            <div class="ci"><span class="ic"><svg>
+                  <use href="#i-mail" />
+                </svg></span>
+              <div><b>Email</b><span>info@smpalfalahrumbia.sch.id</span></div>
+            </div>
+            <div class="ci"><span class="ic"><svg>
+                  <use href="#i-clock" />
+                </svg></span>
+              <div><b>Jam Layanan</b><span>Senin – Sabtu, 07.00 – 15.00 WIB</span></div>
+            </div>
+          </div>
+          <div class="map reveal d1">
+            <iframe title="Lokasi sekolah di Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26962.304789369293!2d105.47711005!3d-4.76855775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3f679c215375ef%3A0x4fa30cea83f0f9ee!2sPondok%20Pesantren%20Al-Falah%20Rumbia!5e1!3m2!1sid!2sid!4v1779622962759!5m2!1sid!2sid"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <div class="brand">
+            <span class="brand-mark brand-mark-foot"><img src="img/Logo.png" alt="Logo SMP Al Falah Rumbia" width="46"
+                height="46" loading="lazy"></span>
+            <span class="brand-text"><strong>SMP Al Falah</strong><span>Rumbia · Lampung Tengah</span></span>
+          </div>
+          <a href="https://wa.me/6285832155052" target="_blank" rel="noopener" class="btn btn-green">Hubungi Kami <svg>
+              <use href="#i-arrow" />
+            </svg></a>
+        </div>
+        <div>
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#berita">Kegiatan</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informasi</h4>
+          <ul>
+            <li><a href="#fasilitas">Fasilitas</a></li>
+            <li><a href="#ppdb">PPDB</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="foot-contact-col">
+          <h4>Hubungi Kami</h4>
+          <ul class="foot-contact">
+            <li><svg>
+                <use href="#i-pin" />
+              </svg><span>Kecamatan Rumbia, Kabupaten Lampung Tengah, Lampung</span></li>
+            <li><svg>
+                <use href="#i-phone" />
+              </svg><a href="https://wa.me/6285832155052" target="_blank" rel="noopener">+62 858-3215-5052</a></li>
+            <li><svg>
+                <use href="#i-mail" />
+              </svg><span>info@smpalfalahrumbia.sch.id</span></li>
+            <li><svg>
+                <use href="#i-clock" />
+              </svg><span>Senin – Sabtu, 07.00 – 15.00 WIB</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom"><span>© <span id="year">2026</span> SMP Al Falah Rumbia. Hak cipta
+          dilindungi.</span><span>Rumbia · Lampung Tengah</span></div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/6285832155052" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path
+        d="M17.500 14.400c-.3-.1-1.700-.8-2-.9-.3-.1-.5-.1-.7.100-.2.300-.8.900-.9 1.100-.2.200-.3.200-.6.100-.3-.1-1.200-.4-2.300-1.400-.8-.8-1.400-1.700-1.600-2-.2-.3 0-.4.100-.6l.4-.5c.1-.2.200-.3.300-.5.100-.2 0-.4 0-.5-.1-.1-.7-1.600-.9-2.200-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400-.3.300-1 1-1 2.500s1.100 2.900 1.200 3.100c.1.200 2.100 3.200 5.100 4.500 2.500 1 3 .8 3.500.8.500-.1 1.700-.7 1.900-1.400.2-.7.200-1.300.2-1.400-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm0 18.200c-1.500 0-3-.4-4.200-1.200l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200z" />
+    </svg>
+  </a>
+  <button class="to-top" id="toTop" aria-label="Kembali ke atas"><svg viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m18 15-6-6-6 6" />
+    </svg></button>
+
+  <script>
+    (function () {
+      var nav = document.getElementById('nav');
+      var burger = document.getElementById('burger');
+      var menu = document.getElementById('menu');
+      var toTop = document.getElementById('toTop');
+      var links = Array.prototype.slice.call(menu.querySelectorAll('a[href^="#"]:not(.btn)'));
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      /* Menu mobile */
+      function setMenu(open) {
+        menu.classList.toggle('open', open);
+        burger.setAttribute('aria-expanded', open);
+        burger.setAttribute('aria-label', open ? 'Tutup menu navigasi' : 'Buka menu navigasi');
+        document.body.style.overflow = open ? 'hidden' : '';
       }
-     });
-    }, { rootMargin: '-45% 0px -50% 0px' });
-    secs.forEach(function (s) { if (s) spy.observe(s); });
+      window.addEventListener('resize', function () { if (window.innerWidth > 1060) setMenu(false); });
+      document.addEventListener('click', function (e) {
+        if (menu.classList.contains('open') && !e.target.closest('#nav')) setMenu(false);
+      });
+      burger.addEventListener('click', function () { setMenu(!menu.classList.contains('open')); });
+      menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
 
-    /* Reveal */
-    var rv = new IntersectionObserver(function (entries) {
-     entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); rv.unobserve(en.target); } });
-    }, { threshold: .12 });
-    document.querySelectorAll('.reveal').forEach(function (el) { rv.observe(el); });
+      /* Navbar & tombol ke atas */
+      function onScroll() {
+        nav.classList.toggle('scrolled', window.scrollY > 10);
+        toTop.classList.toggle('show', window.scrollY > 600);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+      toTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
-    /* Counter */
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var cn = new IntersectionObserver(function (entries) {
-     entries.forEach(function (en) {
-      if (!en.isIntersecting) return;
-      var el = en.target, to = +el.dataset.count, suf = el.dataset.suffix || '';
-      cn.unobserve(el);
-      if (reduce) { el.innerHTML = to + (suf ? '<sup>' + suf + '</sup>' : ''); return; }
-      var t0 = performance.now(), dur = 1400;
-      (function tick(t) {
-       var p = Math.min((t - t0) / dur, 1), v = Math.round(to * (1 - Math.pow(1 - p, 3)));
-       el.innerHTML = v + (p === 1 && suf ? '<sup>' + suf + '</sup>' : '');
-       if (p < 1) requestAnimationFrame(tick);
-      })(t0);
-     });
-    }, { threshold: .6 });
-    document.querySelectorAll('[data-count]').forEach(function (el) { cn.observe(el); });
-   } else {
-    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
-    document.querySelectorAll('[data-count]').forEach(function (el) { el.textContent = el.dataset.count + (el.dataset.suffix || ''); });
-   }
+      /* Menu aktif sesuai section */
+      var secs = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+      if ('IntersectionObserver' in window) {
+        var spy = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting) {
+              var id = '#' + en.target.id;
+              links.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === id); });
+            }
+          });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        secs.forEach(function (s) { if (s) spy.observe(s); });
 
-   /* =====================================================
-      KABAR TERBARU DARI INSTAGRAM (otomatis)
-      1) Daftar di behold.so → hubungkan akun Instagram sekolah → buat feed bertipe "JSON".
-      2) Tempel alamat feed-nya di IG_FEED_URL, contoh: 'https://feeds.behold.so/AbCd1234'
-      3) Isi IG_PROFILE_URL dengan alamat profil IG sekolah.
-      Dikosongkan = tetap memakai kartu contoh di HTML.
-      ===================================================== */
-   var IG_FEED_URL = '';
-   var IG_PROFILE_URL = '';   // contoh: 'https://www.instagram.com/nama_akun_sekolah/'
-   var IG_MAX = 3;            // jumlah postingan yang ditampilkan
+        /* Reveal */
+        var rv = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); rv.unobserve(en.target); } });
+        }, { threshold: .12 });
+        document.querySelectorAll('.reveal').forEach(function (el) { rv.observe(el); });
 
-   (function igFeed() {
-    var box = document.getElementById('igFeed');
-    if (!box) return;
+        /* Counter */
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var cn = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (!en.isIntersecting) return;
+            var el = en.target, to = +el.dataset.count, suf = el.dataset.suffix || '';
+            cn.unobserve(el);
+            if (reduce) { el.innerHTML = to + (suf ? '<sup>' + suf + '</sup>' : ''); return; }
+            var t0 = performance.now(), dur = 1400;
+            (function tick(t) {
+              var p = Math.min((t - t0) / dur, 1), v = Math.round(to * (1 - Math.pow(1 - p, 3)));
+              el.innerHTML = v + (p === 1 && suf ? '<sup>' + suf + '</sup>' : '');
+              if (p < 1) requestAnimationFrame(tick);
+            })(t0);
+          });
+        }, { threshold: .6 });
+        document.querySelectorAll('[data-count]').forEach(function (el) { cn.observe(el); });
+      } else {
+        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+        document.querySelectorAll('[data-count]').forEach(function (el) { el.textContent = el.dataset.count + (el.dataset.suffix || ''); });
+      }
 
-    function addFollow() {
-     if (!IG_PROFILE_URL) return;
-     var wrap = document.createElement('div');
-     wrap.className = 'ig-follow';
-     var a = document.createElement('a');
-     a.className = 'btn btn-outline';
-     a.href = IG_PROFILE_URL; a.target = '_blank'; a.rel = 'noopener';
-     a.innerHTML = '<svg aria-hidden="true"><use href="#i-ig"/></svg>';
-     a.appendChild(document.createTextNode('Lihat semua di Instagram'));
-     wrap.appendChild(a);
-     box.parentNode.insertBefore(wrap, box.nextSibling);
-    }
-    addFollow();
-    if (!IG_FEED_URL) return;
+      /* =====================================================
+         KABAR TERBARU DARI INSTAGRAM (otomatis)
+         1) Daftar di behold.so → hubungkan akun Instagram sekolah → buat feed bertipe "JSON".
+         2) Tempel alamat feed-nya di IG_FEED_URL, contoh: 'https://feeds.behold.so/AbCd1234'
+         3) Isi IG_PROFILE_URL dengan alamat profil IG sekolah.
+         Dikosongkan = tetap memakai kartu contoh di HTML.
+         ===================================================== */
+      var IG_FEED_URL = '';
+      var IG_PROFILE_URL = '';   // contoh: 'https://www.instagram.com/nama_akun_sekolah/'
+      var IG_MAX = 3;            // jumlah postingan yang ditampilkan
 
-    function fmtDate(iso) {
-     var d = new Date(iso);
-     if (isNaN(d)) return '';
-     return d.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
-    }
-    function el(tag, cls, txt) {
-     var n = document.createElement(tag);
-     if (cls) n.className = cls;
-     if (txt) n.textContent = txt;
-     return n;
-    }
-    function card(p) {
-     var cap = (p.caption || '').replace(/\s+/g, ' ').trim();
-     var cut = cap.search(/[.!?\n]/);
-     var end = cut > 12 && cut < 90 ? cut + 1 : (cap.length > 80 ? Math.max(cap.lastIndexOf(' ', 80), 40) : cap.length);
-     var title = cap ? cap.slice(0, end) : 'Postingan terbaru dari Instagram';
-     var rest = cap.slice(end).trim();
-     var img = (p.sizes && p.sizes.medium && p.sizes.medium.mediaUrl) || p.thumbnailUrl || p.mediaUrl || '';
+      (function igFeed() {
+        var box = document.getElementById('igFeed');
+        if (!box) return;
 
-     var art = el('article', 'news ig reveal in');
-     var ph = el('div', 'photo');
-     ph.setAttribute('role', 'img');
-     ph.setAttribute('aria-label', cap ? cap.slice(0, 100) : 'Foto dari Instagram');
-     if (img) ph.style.setProperty('--img', 'url("' + img.replace(/"/g, '%22') + '")');
-     art.appendChild(ph);
+        function addFollow() {
+          if (!IG_PROFILE_URL) return;
+          var wrap = document.createElement('div');
+          wrap.className = 'ig-follow';
+          var a = document.createElement('a');
+          a.className = 'btn btn-outline';
+          a.href = IG_PROFILE_URL; a.target = '_blank'; a.rel = 'noopener';
+          a.innerHTML = '<svg aria-hidden="true"><use href="#i-ig"/></svg>';
+          a.appendChild(document.createTextNode('Lihat semua di Instagram'));
+          wrap.appendChild(a);
+          box.parentNode.insertBefore(wrap, box.nextSibling);
+        }
+        addFollow();
+        if (!IG_FEED_URL) return;
 
-     var body = el('div', 'news-body');
-     var meta = el('div', 'news-meta');
-     meta.appendChild(el('span', 'cat', 'Instagram'));
-     meta.appendChild(el('span', '', fmtDate(p.timestamp)));
-     body.appendChild(meta);
-     body.appendChild(el('h3', 'clamp', title));
-     if (rest) body.appendChild(el('p', 'clamp', rest));
-     var more = el('a', 'more', 'Lihat di Instagram ');
-     more.href = p.permalink; more.target = '_blank'; more.rel = 'noopener';
-     more.innerHTML += '<svg aria-hidden="true"><use href="#i-arrow"/></svg>';
-     body.appendChild(more);
-     art.appendChild(body);
-     return art;
-    }
+        function fmtDate(iso) {
+          var d = new Date(iso);
+          if (isNaN(d)) return '';
+          return d.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+        }
+        function el(tag, cls, txt) {
+          var n = document.createElement(tag);
+          if (cls) n.className = cls;
+          if (txt) n.textContent = txt;
+          return n;
+        }
+        function card(p) {
+          var cap = (p.caption || '').replace(/\s+/g, ' ').trim();
+          var cut = cap.search(/[.!?\n]/);
+          var end = cut > 12 && cut < 90 ? cut + 1 : (cap.length > 80 ? Math.max(cap.lastIndexOf(' ', 80), 40) : cap.length);
+          var title = cap ? cap.slice(0, end) : 'Postingan terbaru dari Instagram';
+          var rest = cap.slice(end).trim();
+          var img = (p.sizes && p.sizes.medium && p.sizes.medium.mediaUrl) || p.thumbnailUrl || p.mediaUrl || '';
 
-    fetch(IG_FEED_URL)
-     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-     .then(function (d) {
-      var posts = (d.posts || []).filter(function (p) { return p && p.permalink; }).slice(0, IG_MAX);
-      if (!posts.length) return;              // tidak ada data → biarkan kartu cadangan
-      box.innerHTML = '';
-      posts.forEach(function (p) { box.appendChild(card(p)); });
-     })
-     .catch(function () { /* gagal memuat → kartu cadangan tetap tampil */ });
-   })();
-  })();
- </script>
+          var art = el('article', 'news ig reveal in');
+          var ph = el('div', 'photo');
+          ph.setAttribute('role', 'img');
+          ph.setAttribute('aria-label', cap ? cap.slice(0, 100) : 'Foto dari Instagram');
+          if (img) ph.style.setProperty('--img', 'url("' + img.replace(/"/g, '%22') + '")');
+          art.appendChild(ph);
+
+          var body = el('div', 'news-body');
+          var meta = el('div', 'news-meta');
+          meta.appendChild(el('span', 'cat', 'Instagram'));
+          meta.appendChild(el('span', '', fmtDate(p.timestamp)));
+          body.appendChild(meta);
+          body.appendChild(el('h3', 'clamp', title));
+          if (rest) body.appendChild(el('p', 'clamp', rest));
+          var more = el('a', 'more', 'Lihat di Instagram ');
+          more.href = p.permalink; more.target = '_blank'; more.rel = 'noopener';
+          more.innerHTML += '<svg aria-hidden="true"><use href="#i-arrow"/></svg>';
+          body.appendChild(more);
+          art.appendChild(body);
+          return art;
+        }
+
+        fetch(IG_FEED_URL)
+          .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+          .then(function (d) {
+            var posts = (d.posts || []).filter(function (p) { return p && p.permalink; }).slice(0, IG_MAX);
+            if (!posts.length) return;              // tidak ada data → biarkan kartu cadangan
+            box.innerHTML = '';
+            posts.forEach(function (p) { box.appendChild(card(p)); });
+          })
+          .catch(function () { /* gagal memuat → kartu cadangan tetap tampil */ });
+      })();
+    })();
+  </script>
 </body>
 
 </html>
