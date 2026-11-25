@@ -9,8 +9,9 @@
   content="SMP Al Falah Rumbia memadukan kurikulum nasional dengan pembinaan karakter dan nilai-nilai keislaman. Informasi profil, program unggulan, fasilitas, dan pendaftaran peserta didik baru.">
  <meta name="theme-color" content="#0B3C7A">
  <!-- GANTI: logo sekolah (favicon). Contoh: <link rel="icon" href="assets/logo.png"> -->
- <link rel="icon"
-  href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231D5FBF'/%3E%3Cstop offset='1' stop-color='%231E9E5A'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M32 4 56 14v18c0 14-10 24-24 28C18 56 8 46 8 32V14z' fill='url(%23g)'/%3E%3C/svg%3E">
+ <link rel="icon" type="image/png" href="img/logo.png">
+ <link rel="apple-touch-icon" href="img/logo.png">
+ <meta property="og:image" content="img/logo.png">
 
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -306,6 +307,14 @@
    width: 100%;
    height: 100%;
    object-fit: contain;
+  }
+
+  .brand-mark-foot {
+   background: #fff;
+   border-radius: 12px;
+   padding: 4px;
+   width: 50px;
+   height: 50px;
   }
 
   .brand-text strong {
@@ -1097,6 +1106,41 @@
 
   .news:hover .more svg {
    transform: translateX(4px);
+  }
+
+  .news h3,
+  .news p {
+   overflow-wrap: anywhere;
+  }
+
+  .news h3.clamp {
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+  }
+
+  .news p.clamp {
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+  }
+
+  .news.ig .cat {
+   background: linear-gradient(135deg, var(--blue-100), var(--green-100));
+   color: var(--blue-800);
+  }
+
+  .ig-follow {
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+  }
+
+  .ig-follow .btn svg {
+   width: 20px;
+   height: 20px;
   }
 
   /* ---------- Fasilitas ---------- */
@@ -2276,22 +2320,7 @@
  <header class="nav" id="nav">
   <div class="container">
    <a href="#beranda" class="brand" aria-label="SMP Al Falah Rumbia — beranda">
-    <!-- GANTI: logo sekolah. Contoh: <span class="brand-mark"><img src="assets/logo.png" alt="Logo SMP"></span> -->
-    <span class="brand-mark">
-     <svg viewBox="0 0 64 64" aria-hidden="true">
-      <defs>
-       <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#1D5FBF" />
-        <stop offset="1" stop-color="#1E9E5A" />
-       </linearGradient>
-      </defs>
-      <path d="M32 3 57 13.500v18.500c0 14.500-10.500 24.500-25 29C17.500 56.500 7 46.500 7 32V13.500z"
-       fill="url(#lg)" />
-      <path
-       d="M32 21c-4-3-9-3.500-14-2.500v19c5-1 10-.5 14 2.500 4-3 9-3.500 14-2.500v-19c-5-1-10-.5-14 2.500zM32 21v19"
-       fill="none" stroke="#fff" stroke-width="2.600" stroke-linejoin="round" stroke-linecap="round" />
-     </svg>
-    </span>
+    <span class="brand-mark"><img src="img/logo.png" alt="Logo SMP Al Falah Rumbia" width="46" height="46"></span>
     <span class="brand-text"><strong>SMP Al Falah</strong><span>Rumbia · Lampung Tengah</span></span>
    </a>
    <button class="burger" id="burger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="menu">
@@ -2582,7 +2611,8 @@
      <h2>Kabar terbaru dari sekolah</h2>
      <p>Ikuti berbagai kegiatan, pengumuman, dan capaian siswa SMP Al Falah Rumbia.</p>
     </div>
-    <div class="news-grid">
+    <!-- Kartu di bawah ini = cadangan. Jika feed Instagram diisi (lihat IG_FEED_URL di bagian script), kartu akan diganti otomatis dengan postingan terbaru. -->
+    <div class="news-grid" id="igFeed" aria-live="polite">
      <!-- GANTI: konten & foto berita -->
      <article class="news reveal">
       <div class="photo" role="img" aria-label="Foto kegiatan"><svg>
@@ -2843,13 +2873,8 @@
    <div class="foot-grid">
     <div>
      <div class="brand">
-      <span class="brand-mark"><svg viewBox="0 0 64 64" aria-hidden="true">
-        <path d="M32 3 57 13.500v18.500c0 14.500-10.500 24.500-25 29C17.500 56.500 7 46.500 7 32V13.500z"
-         fill="url(#lg)" />
-        <path
-         d="M32 21c-4-3-9-3.500-14-2.500v19c5-1 10-.5 14 2.500 4-3 9-3.500 14-2.500v-19c-5-1-10-.5-14 2.500zM32 21v19"
-         fill="none" stroke="#fff" stroke-width="2.600" stroke-linejoin="round" stroke-linecap="round" />
-       </svg></span>
+      <span class="brand-mark brand-mark-foot"><img src="img/logo.png" alt="Logo SMP Al Falah Rumbia" width="46"
+        height="46" loading="lazy"></span>
       <span class="brand-text"><strong>SMP Al Falah</strong><span>Rumbia · Lampung Tengah</span></span>
      </div>
      <p>Mencetak generasi cerdas, berkarakter, dan berprestasi dengan landasan ilmu dan akhlak mulia.</p>
@@ -2969,6 +2994,88 @@
     document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
     document.querySelectorAll('[data-count]').forEach(function (el) { el.textContent = el.dataset.count + (el.dataset.suffix || ''); });
    }
+
+   /* =====================================================
+      KABAR TERBARU DARI INSTAGRAM (otomatis)
+      1) Daftar di behold.so → hubungkan akun Instagram sekolah → buat feed bertipe "JSON".
+      2) Tempel alamat feed-nya di IG_FEED_URL, contoh: 'https://feeds.behold.so/AbCd1234'
+      3) Isi IG_PROFILE_URL dengan alamat profil IG sekolah.
+      Dikosongkan = tetap memakai kartu contoh di HTML.
+      ===================================================== */
+   var IG_FEED_URL = '';
+   var IG_PROFILE_URL = '';   // contoh: 'https://www.instagram.com/nama_akun_sekolah/'
+   var IG_MAX = 3;            // jumlah postingan yang ditampilkan
+
+   (function igFeed() {
+    var box = document.getElementById('igFeed');
+    if (!box) return;
+
+    function addFollow() {
+     if (!IG_PROFILE_URL) return;
+     var wrap = document.createElement('div');
+     wrap.className = 'ig-follow';
+     var a = document.createElement('a');
+     a.className = 'btn btn-outline';
+     a.href = IG_PROFILE_URL; a.target = '_blank'; a.rel = 'noopener';
+     a.innerHTML = '<svg aria-hidden="true"><use href="#i-ig"/></svg>';
+     a.appendChild(document.createTextNode('Lihat semua di Instagram'));
+     wrap.appendChild(a);
+     box.parentNode.insertBefore(wrap, box.nextSibling);
+    }
+    addFollow();
+    if (!IG_FEED_URL) return;
+
+    function fmtDate(iso) {
+     var d = new Date(iso);
+     if (isNaN(d)) return '';
+     return d.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+    }
+    function el(tag, cls, txt) {
+     var n = document.createElement(tag);
+     if (cls) n.className = cls;
+     if (txt) n.textContent = txt;
+     return n;
+    }
+    function card(p) {
+     var cap = (p.caption || '').replace(/\s+/g, ' ').trim();
+     var cut = cap.search(/[.!?\n]/);
+     var end = cut > 12 && cut < 90 ? cut + 1 : (cap.length > 80 ? Math.max(cap.lastIndexOf(' ', 80), 40) : cap.length);
+     var title = cap ? cap.slice(0, end) : 'Postingan terbaru dari Instagram';
+     var rest = cap.slice(end).trim();
+     var img = (p.sizes && p.sizes.medium && p.sizes.medium.mediaUrl) || p.thumbnailUrl || p.mediaUrl || '';
+
+     var art = el('article', 'news ig reveal in');
+     var ph = el('div', 'photo');
+     ph.setAttribute('role', 'img');
+     ph.setAttribute('aria-label', cap ? cap.slice(0, 100) : 'Foto dari Instagram');
+     if (img) ph.style.setProperty('--img', 'url("' + img.replace(/"/g, '%22') + '")');
+     art.appendChild(ph);
+
+     var body = el('div', 'news-body');
+     var meta = el('div', 'news-meta');
+     meta.appendChild(el('span', 'cat', 'Instagram'));
+     meta.appendChild(el('span', '', fmtDate(p.timestamp)));
+     body.appendChild(meta);
+     body.appendChild(el('h3', 'clamp', title));
+     if (rest) body.appendChild(el('p', 'clamp', rest));
+     var more = el('a', 'more', 'Lihat di Instagram ');
+     more.href = p.permalink; more.target = '_blank'; more.rel = 'noopener';
+     more.innerHTML += '<svg aria-hidden="true"><use href="#i-arrow"/></svg>';
+     body.appendChild(more);
+     art.appendChild(body);
+     return art;
+    }
+
+    fetch(IG_FEED_URL)
+     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+     .then(function (d) {
+      var posts = (d.posts || []).filter(function (p) { return p && p.permalink; }).slice(0, IG_MAX);
+      if (!posts.length) return;              // tidak ada data → biarkan kartu cadangan
+      box.innerHTML = '';
+      posts.forEach(function (p) { box.appendChild(card(p)); });
+     })
+     .catch(function () { /* gagal memuat → kartu cadangan tetap tampil */ });
+   })();
   })();
  </script>
 </body>
