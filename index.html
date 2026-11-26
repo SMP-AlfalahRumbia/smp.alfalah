@@ -2313,7 +2313,8 @@
   <header class="nav" id="nav">
     <div class="container">
       <a href="#beranda" class="brand" aria-label="SMP Al Falah Rumbia — beranda">
-        <span class="brand-mark"><img src="img/Logo.png" alt="Logo SMP Al Falah Rumbia" width="46" height="46"></span>
+        <span class="brand-mark"><img src="img/Logo.png" alt="Logo SMP Al Falah Rumbia" width="46" height="46"
+            data-af-kunci="Logo header"></span>
         <span class="brand-text"><strong>SMP Al Falah</strong><span>Rumbia · Lampung Tengah</span></span>
       </a>
       <button class="burger" id="burger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="menu">
@@ -2335,7 +2336,7 @@
   <main id="konten">
 
     <!-- HERO -->
-    <section class="hero" id="beranda" style="padding:0">
+    <section class="hero" id="beranda" style="padding:0" data-af-bagian="Beranda (foto utama)" data-af-rasio="4/5">
       <div class="container">
         <div>
           <h1>Mencetak generasi <em>cerdas</em>, berkarakter, dan berprestasi.</h1>
@@ -2351,7 +2352,7 @@
         </div>
         <div class="hero-visual">
           <!-- GANTI: foto utama sekolah →  style="--img:url('assets/hero.jpg')" -->
-          <div class="photo" role="img" aria-label="Foto kegiatan siswa SMP Al Falah"><svg>
+          <div class="photo" role="img" aria-label="Foto kegiatan siswa SMP Al Falah" data-af="hero-1"><svg>
               <use href="#i-img" />
             </svg></div>
           <div class="float-card fc-1">
@@ -2495,7 +2496,9 @@
     </section>
 
     <!-- BERITA / KEGIATAN -->
-    <section class="bg-soft" id="berita">
+    <section class="bg-soft" id="berita" data-af-bagian="Kegiatan &amp; Informasi" data-af-label-t="Judul berita"
+      data-af-label-k="Isi singkat" data-af-label-k2="Tanggal"
+      data-af-catatan="Jika feed Instagram aktif, kartu ini diganti otomatis oleh postingan Instagram.">
       <div class="container">
         <div class="sec-head reveal">
           <h2>Kegiatan &amp; Informasi</h2>
@@ -2504,26 +2507,30 @@
         <div class="news-grid" id="igFeed" aria-live="polite">
           <!-- GANTI: konten & foto berita -->
           <article class="news reveal">
-            <div class="photo" role="img" aria-label="Foto kegiatan"><svg>
+            <div class="photo" role="img" aria-label="Foto kegiatan" data-af="berita-1"><svg>
                 <use href="#i-img" />
               </svg></div>
             <div class="news-body">
-              <div class="news-meta"><span class="cat">Pengumuman</span><span>12 November 2026</span></div>
-              <h3>Pendaftaran Peserta Didik Baru Tahun Ajaran 2026/2027 Resmi Dibuka</h3>
-              <p>Pendaftaran dibuka untuk calon siswa baru. Kuota terbatas, segera lengkapi berkas pendaftaran Anda.</p>
+              <div class="news-meta"><span class="cat">Pengumuman</span><span data-af-k2="berita-1">12 November
+                  2026</span></div>
+              <h3 data-af-t="berita-1">Pendaftaran Peserta Didik Baru Tahun Ajaran 2026/2027 Resmi Dibuka</h3>
+              <p data-af-k="berita-1">Pendaftaran dibuka untuk calon siswa baru. Kuota terbatas, segera lengkapi berkas
+                pendaftaran Anda.</p>
               <a class="more" href="#ppdb">Selengkapnya <svg>
                   <use href="#i-arrow" />
                 </svg></a>
             </div>
           </article>
           <article class="news reveal d1">
-            <div class="photo" role="img" aria-label="Foto kegiatan"><svg>
+            <div class="photo" role="img" aria-label="Foto kegiatan" data-af="berita-2"><svg>
                 <use href="#i-img" />
               </svg></div>
             <div class="news-body">
-              <div class="news-meta"><span class="cat">Prestasi</span><span>3 November 2026</span></div>
-              <h3>Siswa Meraih Juara dalam Lomba Pidato Tingkat Kabupaten</h3>
-              <p>Prestasi membanggakan kembali diraih siswa kami berkat pembinaan rutin dan dedikasi para pembimbing.
+              <div class="news-meta"><span class="cat">Prestasi</span><span data-af-k2="berita-2">3 November 2026</span>
+              </div>
+              <h3 data-af-t="berita-2">Siswa Meraih Juara dalam Lomba Pidato Tingkat Kabupaten</h3>
+              <p data-af-k="berita-2">Prestasi membanggakan kembali diraih siswa kami berkat pembinaan rutin dan
+                dedikasi para pembimbing.
               </p>
               <a class="more" href="#berita">Selengkapnya <svg>
                   <use href="#i-arrow" />
@@ -2531,13 +2538,15 @@
             </div>
           </article>
           <article class="news reveal d2">
-            <div class="photo" role="img" aria-label="Foto kegiatan"><svg>
+            <div class="photo" role="img" aria-label="Foto kegiatan" data-af="berita-3"><svg>
                 <use href="#i-img" />
               </svg></div>
             <div class="news-body">
-              <div class="news-meta"><span class="cat">Kegiatan</span><span>25 Oktober 2026</span></div>
-              <h3>Peringatan Hari Santri: Upacara, Lomba, dan Kegiatan Keagamaan</h3>
-              <p>Seluruh warga sekolah memeriahkan Hari Santri dengan beragam kegiatan yang penuh makna.</p>
+              <div class="news-meta"><span class="cat">Kegiatan</span><span data-af-k2="berita-3">25 Oktober 2026</span>
+              </div>
+              <h3 data-af-t="berita-3">Peringatan Hari Santri: Upacara, Lomba, dan Kegiatan Keagamaan</h3>
+              <p data-af-k="berita-3">Seluruh warga sekolah memeriahkan Hari Santri dengan beragam kegiatan yang penuh
+                makna.</p>
               <a class="more" href="#berita">Selengkapnya <svg>
                   <use href="#i-arrow" />
                 </svg></a>
@@ -2548,64 +2557,64 @@
     </section>
 
     <!-- FASILITAS -->
-    <section id="fasilitas">
+    <section id="fasilitas" data-af-bagian="Fasilitas" data-af-label-t="Nama fasilitas">
       <div class="container">
         <div class="sec-head reveal">
           <h2>Fasilitas</h2>
         </div>
         <div class="fas-grid">
           <!-- GANTI: tambahkan foto → style="--img:url('assets/fasilitas/kelas.jpg')" -->
-          <div class="fas photo reveal"><svg>
+          <div class="fas photo reveal" data-af="fasilitas-1"><svg>
               <use href="#i-img" />
-            </svg><span>Ruang Kelas</span></div>
-          <div class="fas photo reveal d1"><svg>
+            </svg><span data-af-t="fasilitas-1">Ruang Kelas</span></div>
+          <div class="fas photo reveal d1" data-af="fasilitas-2"><svg>
               <use href="#i-img" />
-            </svg><span>Laboratorium</span></div>
-          <div class="fas photo reveal d2"><svg>
+            </svg><span data-af-t="fasilitas-2">Laboratorium</span></div>
+          <div class="fas photo reveal d2" data-af="fasilitas-3"><svg>
               <use href="#i-img" />
-            </svg><span>Perpustakaan</span></div>
-          <div class="fas photo reveal d3"><svg>
+            </svg><span data-af-t="fasilitas-3">Perpustakaan</span></div>
+          <div class="fas photo reveal d3" data-af="fasilitas-4"><svg>
               <use href="#i-img" />
-            </svg><span>Masjid</span></div>
-          <div class="fas photo reveal"><svg>
+            </svg><span data-af-t="fasilitas-4">Masjid</span></div>
+          <div class="fas photo reveal" data-af="fasilitas-5"><svg>
               <use href="#i-img" />
-            </svg><span>Lapangan Olahraga</span></div>
-          <div class="fas photo reveal d1"><svg>
+            </svg><span data-af-t="fasilitas-5">Lapangan Olahraga</span></div>
+          <div class="fas photo reveal d1" data-af="fasilitas-6"><svg>
               <use href="#i-img" />
-            </svg><span>Aula Serbaguna</span></div>
-          <div class="fas photo reveal d2"><svg>
+            </svg><span data-af-t="fasilitas-6">Aula Serbaguna</span></div>
+          <div class="fas photo reveal d2" data-af="fasilitas-7"><svg>
               <use href="#i-img" />
-            </svg><span>Kantin Sehat</span></div>
-          <div class="fas photo reveal d3"><svg>
+            </svg><span data-af-t="fasilitas-7">Kantin Sehat</span></div>
+          <div class="fas photo reveal d3" data-af="fasilitas-8"><svg>
               <use href="#i-img" />
-            </svg><span>Asrama</span></div>
+            </svg><span data-af-t="fasilitas-8">Asrama</span></div>
         </div>
       </div>
     </section>
 
     <!-- GALERI -->
-    <section class="bg-soft" id="galeri">
+    <section class="bg-soft" id="galeri" data-af-bagian="Galeri">
       <div class="container">
         <div class="sec-head reveal">
           <h2>Galeri</h2>
         </div>
         <div class="gallery reveal">
-          <div class="photo w2 h2"><svg>
+          <div class="photo w2 h2" data-af="galeri-1"><svg>
               <use href="#i-img" />
             </svg></div>
-          <div class="photo"><svg>
+          <div class="photo" data-af="galeri-2"><svg>
               <use href="#i-img" />
             </svg></div>
-          <div class="photo"><svg>
+          <div class="photo" data-af="galeri-3"><svg>
               <use href="#i-img" />
             </svg></div>
-          <div class="photo w2"><svg>
+          <div class="photo w2" data-af="galeri-4"><svg>
               <use href="#i-img" />
             </svg></div>
-          <div class="photo"><svg>
+          <div class="photo" data-af="galeri-5"><svg>
               <use href="#i-img" />
             </svg></div>
-          <div class="photo"><svg>
+          <div class="photo" data-af="galeri-6"><svg>
               <use href="#i-img" />
             </svg></div>
         </div>
@@ -2759,7 +2768,7 @@
         <div class="foot-brand">
           <div class="brand">
             <span class="brand-mark brand-mark-foot"><img src="img/Logo.png" alt="Logo SMP Al Falah Rumbia" width="46"
-                height="46" loading="lazy"></span>
+                height="46" loading="lazy" data-af-kunci="Logo footer"></span>
             <span class="brand-text"><strong>SMP Al Falah</strong><span>Rumbia · Lampung Tengah</span></span>
           </div>
           <a href="https://wa.me/6285832155052" target="_blank" rel="noopener" class="btn btn-green">Hubungi Kami <svg>
